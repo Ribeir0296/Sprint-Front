@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conecta do Bem: plataforma para a Turma do Bem gerenciar doadores, parceiros e captação com dados e inteligência artificial.">
+    <title>Início | Conecta do Bem</title>
+    <link rel="icon" href="imagens/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700&family=Roboto:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--
+    PÁGINA INICIAL (index.html) - Apresenta o projeto, o problema e dá acesso às demais áreas do site.
+-->
+
+    <div class="pagina">
+    <!-- ================= HEADER (igual em todas as páginas) ================= -->
+    <header class="header">
+        <div class="container header-conteudo">
+            <a class="logo" href="index.html" aria-label="Conecta do Bem - página inicial">
+                <img src="imagens/logo.svg" alt="Logotipo Conecta do Bem: um sol">
+                <span class="logo-texto">Conecta <span>do Bem</span></span>
+            </a>
+
+            <!-- Menu principal de navegação -->
+            <nav aria-label="Menu principal">
+                <ul class="menu-lista">
+                    <li><a class="menu-link ativo" aria-current="page" href="index.html">Início</a></li>
+                    <li><a class="menu-link" href="sobre.html">Sobre</a></li>
+                    <li><a class="menu-link" href="solucao.html">Solução</a></li>
+                    <li><a class="menu-link" href="painel.html">Protótipo</a></li>
+                    <li><a class="menu-link" href="integrantes.html">Integrantes</a></li>
+                    <li><a class="menu-link" href="faq.html">FAQ</a></li>
+                    <li><a class="menu-link" href="contato.html">Contato</a></li>
+                    <li><a class="menu-link menu-link-destaque" href="login.html">Entrar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= CONTEÚDO PRINCIPAL ================= -->
+    <main>
+        <!-- HERO: apresentação principal do projeto -->
+        <section class="hero">
+            <div class="container grade-2">
+                <div class="hero-texto">
+                    <span class="etiqueta">Challenge FIAP + Turma do Bem</span>
+                    <h1>Mais doadores conectados, <span>mais sorrisos</span> transformados.</h1>
+                    <p>O Conecta do Bem é uma plataforma que centraliza doadores, empresas e parceiros da Turma do Bem, organiza o funil de captação e usa dados e inteligência artificial para apoiar decisões.</p>
+                    <div class="grupo-botoes">
+                        <a class="btn btn-primario" href="solucao.html">Conheça a solução</a>
+                        <a class="btn btn-secundario" href="painel.html">Ver protótipo</a>
+                    </div>
+                </div>
+                <figure class="hero-imagem">
+                    <img src="img/dente-3d.png" alt="Dente 3D">
+                </figure>
+            </div>
+        </section>
+
+        <!-- NÚMEROS: contexto da saúde bucal no Brasil -->
+        <section class="secao secao-destaque" aria-labelledby="titulo-numeros">
+            <div class="container">
+                <div class="secao-cabecalho">
+                    <h2 id="titulo-numeros">Saúde bucal no Brasil</h2>
+                    <p>A falta de acesso ao dentista ainda é uma realidade para milhões de brasileiros.</p>
+                </div>
+                <div class="grade-4">
+                    <article class="estatistica">
+                        <span class="estatistica-numero">11%</span>
+                        <p class="estatistica-texto">dos jovens de 12 anos nunca foram ao dentista</p>
+                    </article>
+                    <article class="estatistica">
+                        <span class="estatistica-numero">14 mi</span>
+                        <p class="estatistica-texto">de pessoas perderam todos os dentes</p>
+                    </article>
+                    <article class="estatistica">
+                        <span class="estatistica-numero">34 mi</span>
+                        <p class="estatistica-texto">de adultos perderam 13 dentes ou mais</p>
+                    </article>
+                    <article class="estatistica">
+                        <span class="estatistica-numero">44%</span>
+                        <p class="estatistica-texto">dos jovens de 15 a 19 anos têm cárie não tratada</p>
+                    </article>
+                </div>
+                <p class="fonte-dados">Fonte: Pesquisa Nacional de Saúde (IBGE) - 2023, apresentada no kickoff da Turma do Bem.</p>
+            </div>
+        </section>
+
+        <!-- CICLO DA POBREZA -->
+        <section class="secao" aria-labelledby="titulo-ciclo">
+            <div class="container">
+                <div class="secao-cabecalho">
+                    <span class="etiqueta">O problema</span>
+                    <h2 id="titulo-ciclo">O ciclo da pobreza começa pelo sorriso</h2>
+                    <p>Sem tratamento odontológico, jovens perdem oportunidades de emprego e o ciclo se repete.</p>
+                </div>
+                <ol class="ciclo">
+                    <li class="ciclo-item">
+                        <h3>Não vai ao dentista</h3>
+                        <p>Falta de acesso a atendimento odontológico.</p>
+                    </li>
+                    <li class="ciclo-item">
+                        <h3>Perde os dentes</h3>
+                        <p>Problemas simples viram perdas permanentes.</p>
+                    </li>
+                    <li class="ciclo-item">
+                        <h3>Não arruma um bom emprego</h3>
+                        <p>A aparência afeta a autoestima e as entrevistas.</p>
+                    </li>
+                    <li class="ciclo-item">
+                        <h3>Não tem dinheiro</h3>
+                        <p>E, sem renda, volta a não ir ao dentista.</p>
+                    </li>
+                </ol>
+                <p class="ciclo-nota">Quanto mais doadores e parceiros a Turma do Bem consegue manter, mais pessoas saem desse ciclo.</p>
+            </div>
+        </section>
+
+        <!-- RECURSOS PRINCIPAIS DA SOLUÇÃO -->
+        <section class="secao secao-clara" aria-labelledby="titulo-recursos">
+            <div class="container">
+                <div class="secao-cabecalho">
+                    <span class="etiqueta">Nossa proposta</span>
+                    <h2 id="titulo-recursos">O que a plataforma oferece</h2>
+                </div>
+                <div class="grade-3">
+                    <article class="card">
+                        <div class="card-icone"><img src="imagens/icones/usuarios.svg" alt=""></div>
+                        <h3>Cadastro centralizado</h3>
+                        <p>Pessoas físicas, empresas, parceiros e apoiadores em um único lugar, com histórico completo.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-icone card-icone-laranja"><img src="imagens/icones/funil.svg" alt=""></div>
+                        <h3>Funil de captação</h3>
+                        <p>Acompanhe cada contato desde o primeiro interesse até a doação recorrente.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-icone"><img src="imagens/icones/grafico.svg" alt=""></div>
+                        <h3>Dashboards</h3>
+                        <p>Indicadores claros de arrecadação, retenção e campanhas para a tomada de decisão.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-icone card-icone-laranja"><img src="imagens/icones/ia.svg" alt=""></div>
+                        <h3>Inteligência artificial</h3>
+                        <p>Qualificação e priorização automática das oportunidades com maior chance de conversão.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-icone"><img src="imagens/icones/engrenagem.svg" alt=""></div>
+                        <h3>Automação</h3>
+                        <p>E-mails de agradecimento, lembretes e relatórios enviados sem trabalho manual.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-icone card-icone-laranja"><img src="imagens/icones/cadeado.svg" alt=""></div>
+                        <h3>Segurança e LGPD</h3>
+                        <p>Dados protegidos, com controle de acesso e consentimento dos doadores.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAMADA PARA AÇÃO -->
+        <section class="secao" aria-labelledby="titulo-cta">
+            <div class="container">
+                <div class="cta">
+                    <h2 id="titulo-cta">Veja a plataforma funcionando</h2>
+                    <p>Navegue pelo protótipo do painel de indicadores e da gestão de doadores.</p>
+                    <a class="btn btn-claro" href="painel.html">Abrir protótipo</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER (igual em todas as páginas) ================= -->
+    <footer class="footer">
+        <div class="container footer-grade">
+            <section class="footer-sobre">
+                <a class="logo" href="index.html">
+                    <img src="imagens/logo.svg" alt="Logotipo Conecta do Bem">
+                    <span class="logo-texto">Conecta do Bem</span>
+                </a>
+                <p>Plataforma de gestão de doadores e parceiros desenvolvida para apoiar a Turma do Bem na missão de gerar inclusão social através do sorriso.</p>
+            </section>
+
+            <nav aria-label="Links do rodapé">
+                <h2>Navegação</h2>
+                <ul class="footer-lista">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre o projeto</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <nav aria-label="Links da solução">
+                <h2>Solução</h2>
+                <ul class="footer-lista">
+                    <li><a href="solucao.html">Como funciona</a></li>
+                    <li><a href="painel.html">Painel de indicadores</a></li>
+                    <li><a href="doadores.html">Gestão de doadores</a></li>
+                </ul>
+            </nav>
+
+            <section>
+                <h2>Contato</h2>
+                <ul class="footer-lista">
+                    <li>contato@conectadobem.com.br</li>
+                    <li>FIAP - Av. Paulista, 1106 - São Paulo/SP</li>
+                    <li>Challenge 1TDS - 2026</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="footer-copy">
+            <p>&copy; 2026 Conecta do Bem - Projeto acadêmico FIAP em parceria com a Turma do Bem. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>

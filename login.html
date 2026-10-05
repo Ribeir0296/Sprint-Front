@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Turma do Bem</title>
+    <link rel="icon" href="imagens/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700&family=Roboto:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="auth-card">
+        <!-- Coluna Esquerda: painel de vidro com textos e formulário -->
+        <section class="form-section">
+            <div class="icon-sun">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Conecta do Bem"><g stroke="#E8A56F" stroke-width="3.6" stroke-linecap="round" fill="none"><circle cx="50" cy="50" r="14"/><line x1="50" y1="4" x2="50" y2="20"/><line x1="50" y1="4" x2="50" y2="20" transform="rotate(45 50 50)"/><line x1="50" y1="4" x2="50" y2="20" transform="rotate(90 50 50)"/><line x1="50" y1="4" x2="50" y2="20" transform="rotate(135 50 50)"/><line x1="50" y1="4" x2="50" y2="20" transform="rotate(180 50 50)"/><line x1="50" y1="4" x2="50" y2="20" transform="rotate(225 50 50)"/><line x1="50" y1="4" x2="50" y2="20" transform="rotate(270 50 50)"/><line x1="50" y1="4" x2="50" y2="20" transform="rotate(315 50 50)"/></g></svg>
+            </div>
+
+            <h1 class="title">Seja bem vindo á Turma do Bem</h1>
+            <p class="subtitle">aqui você agendará serviços gratúitos para a sua saúde</p>
+
+            <!-- Formulário preparado para o Back-end -->
+            <form action="processa_login.php" method="POST">
+
+                 <a href="cadastro.html" class="btn-outline">Nao tenho uma conta</a>
+                 <br>
+
+                <div class="divider">
+                    <hr> <span>ou</span> <hr>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" name="email" id="email" placeholder="Email" autocomplete="email" aria-label="Email" required>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" name="senha" id="senha" placeholder="Senha" autocomplete="Senha" aria-label="Senha" required>
+                </div>
+
+                <div class="submit">
+                    <button type="submit" class="btn-arrow" aria-label="Continuar">Entrar</button>
+                </div>
+
+                <div class="checkbox-group">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" name="manter_logado" value="1" checked>
+                        <span class="checkmark"></span>
+                        Manter logado
+                    </label>
+                </div>
+            </form>
+
+            <p class="terms">Ao continuar, você concorda com <a href="#">nossos termos</a>.</p>
+        </section>
+
+        <!-- Coluna Direita: dente 3D -->
+        <div class="image-section">
+            <img src="img/dente-3d.png" alt="Dente 3D" class="dente-premium">
+        </div>
+    </main>
+</body>
+</html>
