@@ -1,15 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Entre em contato com a equipe do Conecta do Bem.">
+    <title>Contato | Conecta do Bem</title>
+    <link rel="icon" href="imagens/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700&family=Roboto:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <h1>PÁGINA EM MANUTENÇÃO, VOLTE EM BREVE!</h1>
-    <a href="index.html">VOLTAR</a>
-</body>
+    <div class="pagina">
+    <header class="header">
+        <div class="container header-conteudo">
+            <a class="logo" href="index.html" aria-label="Conecta do Bem - página inicial">
+                <img src="imagens/logo.svg" alt="Logotipo Conecta do Bem: um sol">
+                <span class="logo-texto">Conecta <span>do Bem</span></span>
+            </a>
 
+            <!-- Menu principal de navegação -->
+            <nav aria-label="Menu principal">
+                <ul class="menu-lista">
+                    <li><a class="menu-link" href="index.html">Início</a></li>
+                    <li><a class="menu-link" href="sobre.html">Sobre</a></li>
+                    <li><a class="menu-link" href="solucao.html">Solução</a></li>
+                    <li><a class="menu-link" href="painel.html">Protótipo</a></li>
+                    <li><a class="menu-link" href="integrantes.html">Integrantes</a></li>
+                    <li><a class="menu-link" href="faq.html">FAQ</a></li>
+                    <li><a class="menu-link ativo" aria-current="page" href="contato.html">Contato</a></li>
+                    <li><a class="menu-link menu-link-destaque" href="login.html">Entrar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="topo-pagina">
+            <div class="container">
+                <span class="etiqueta">Contato</span>
+                <h1>Fale com a nossa equipe</h1>
+                <p>Tem uma dúvida, sugestão ou quer conversar sobre o projeto? Envie uma mensagem.</p>
+            </div>
+        </section>
+
+        <section class="secao secao-compacta">
+            <div class="container contato-grade">
+                <div class="contato-info">
+                    <article class="painel">
+                        <h3>Email</h3>
+                        <p>contato@conectadobem.com.br</p>
+                    </article>
+                    <article class="painel">
+                        <h3>Endereço</h3>
+                        <p>FIAP - Av. Paulista, 1106 - São Paulo/SP</p>
+                    </article>
+                    <article class="painel">
+                        <h3>Projeto</h3>
+                        <p>Challenge 1TDS - 2026, em parceria com a Turma do Bem.</p>
+                    </article>
+                </div>
+
+                <!-- Formulário preparado para o Back-end -->
+                <form class="contato-form" action="processa_contato.php" method="POST">
+                    <div class="input-group">
+                        <input type="text" name="nome" id="nome" placeholder="Nome Completo" autocomplete="name" aria-label="Nome completo" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="email" id="email" placeholder="Email" autocomplete="email" aria-label="Email" required>
+                    </div>
+                    <div class="input-group">
+                        <select name="assunto" id="assunto" aria-label="Assunto" required>
+                            <option value="" disabled selected>Assunto</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="parceria">Parceria ou doação</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem" aria-label="Sua mensagem" required></textarea>
+                    <button type="submit" class="btn-primary">Enviar mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grade">
+            <section class="footer-sobre">
+                <a class="logo" href="index.html">
+                    <img src="imagens/logo.svg" alt="Logotipo Conecta do Bem">
+                    <span class="logo-texto">Conecta do Bem</span>
+                </a>
+                <p>Plataforma de gestão de doadores e parceiros desenvolvida para apoiar a Turma do Bem na missão de gerar inclusão social através do sorriso.</p>
+            </section>
+
+            <nav aria-label="Links do rodapé">
+                <h2>Navegação</h2>
+                <ul class="footer-lista">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre o projeto</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <nav aria-label="Links da solução">
+                <h2>Solução</h2>
+                <ul class="footer-lista">
+                    <li><a href="solucao.html">Como funciona</a></li>
+                    <li><a href="painel.html">Painel de indicadores</a></li>
+                    <li><a href="doadores.html">Gestão de doadores</a></li>
+                </ul>
+            </nav>
+
+            <section>
+                <h2>Contato</h2>
+                <ul class="footer-lista">
+                    <li>contato@conectadobem.com.br</li>
+                    <li>FIAP - Av. Paulista, 1106 - São Paulo/SP</li>
+                    <li>Challenge 1TDS - 2026</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="footer-copy">
+            <p>&copy; 2026 Conecta do Bem - Projeto acadêmico FIAP em parceria com a Turma do Bem. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    </div>
+</body>
 </html>

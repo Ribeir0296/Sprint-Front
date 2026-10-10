@@ -1,12 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Perguntas frequentes sobre a Turma do Bem e o projeto Conecta do Bem.">
+    <title>FAQ | Conecta do Bem</title>
+    <link rel="icon" href="imagens/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700&family=Roboto:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>PÁGINA EM MANUTENÇÃO, VOLTE EM BREVE!</h1>
-    <a href="index.html">VOLTAR</a>
+    <div class="pagina">
+    <header class="header">
+        <div class="container header-conteudo">
+            <a class="logo" href="index.html" aria-label="Conecta do Bem - página inicial">
+                <img src="imagens/logo.svg" alt="Logotipo Conecta do Bem: um sol">
+                <span class="logo-texto">Conecta <span>do Bem</span></span>
+            </a>
+
+            <!-- Menu principal de navegação -->
+            <nav aria-label="Menu principal">
+                <ul class="menu-lista">
+                    <li><a class="menu-link" href="index.html">Início</a></li>
+                    <li><a class="menu-link" href="sobre.html">Sobre</a></li>
+                    <li><a class="menu-link" href="solucao.html">Solução</a></li>
+                    <li><a class="menu-link" href="painel.html">Protótipo</a></li>
+                    <li><a class="menu-link" href="integrantes.html">Integrantes</a></li>
+                    <li><a class="menu-link ativo" aria-current="page" href="faq.html">FAQ</a></li>
+                    <li><a class="menu-link" href="contato.html">Contato</a></li>
+                    <li><a class="menu-link menu-link-destaque" href="login.html">Entrar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="topo-pagina">
+            <div class="container">
+                <span class="etiqueta">FAQ</span>
+                <h1>Perguntas frequentes</h1>
+                <p>Respostas rápidas sobre a Turma do Bem e sobre o Conecta do Bem.</p>
+            </div>
+        </section>
+
+        <section class="secao secao-compacta" aria-label="Lista de perguntas">
+            <div class="container">
+                <div class="faq">
+
+                <details>
+                    <summary>Quem pode ser atendido pela Turma do Bem?</summary>
+                    <div class="resposta"><p>Jovens de 11 a 17 anos em situação de vulnerabilidade social. Os casos mais graves e os jovens mais próximos do primeiro emprego têm prioridade.</p></div>
+                </details>
+
+                <details>
+                    <summary>O tratamento é realmente gratuito?</summary>
+                    <div class="resposta"><p>Sim. O atendimento é feito por dentistas voluntários, sem custo para o jovem nem para a família.</p></div>
+                </details>
+
+                <details>
+                    <summary>O que o tratamento inclui?</summary>
+                    <div class="resposta"><p>Quando necessário, inclui radiografias, ortodontia, próteses e implantes. O acompanhamento vai até o jovem completar 18 anos.</p></div>
+                </details>
+
+                <details>
+                    <summary>Como funciona a triagem?</summary>
+                    <div class="resposta"><p>Um dentista voluntário faz um exame visual rápido, sem procedimentos invasivos, e a família preenche uma ficha com dados de saúde bucal e da situação socioeconômica. Depois, a ONG seleciona os beneficiados e avisa as famílias.</p></div>
+                </details>
+
+                <details>
+                    <summary>Como me torno dentista voluntário?</summary>
+                    <div class="resposta"><p>O cadastro é feito pela própria Turma do Bem. Consulte o site oficial da ONG para ver as etapas e os coordenadores da sua cidade.</p></div>
+                </details>
+
+                <details>
+                    <summary>Como posso doar ou ser parceiro?</summary>
+                    <div class="resposta"><p>Pessoas e empresas podem apoiar a ONG como doadoras ou parceiras. Os canais oficiais de doação estão no site da Turma do Bem. O Conecta do Bem foi pensado para ajudar a organizar esse relacionamento.</p></div>
+                </details>
+
+                <details>
+                    <summary>O que é o Conecta do Bem?</summary>
+                    <div class="resposta"><p>É um projeto acadêmico da FIAP, desenvolvido em parceria com a Turma do Bem, que propõe uma plataforma para gerenciar doadores e parceiros com dados e inteligência artificial.</p></div>
+                </details>
+
+                <details>
+                    <summary>Este site é o site oficial da Turma do Bem?</summary>
+                    <div class="resposta"><p>Não. Este é um protótipo acadêmico. Para informações oficiais, inscrições e doações, acesse os canais da própria Turma do Bem.</p></div>
+                </details>
+
+                <details>
+                    <summary>Meus dados estão seguros?</summary>
+                    <div class="resposta"><p>A proposta da plataforma prevê proteção de dados, controle de acesso e consentimento dos doadores, conforme a LGPD. Como este é um protótipo, não envie informações sensíveis.</p></div>
+                </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao-clara" aria-labelledby="titulo-cta">
+            <div class="container">
+                <div class="cta">
+                    <h2 id="titulo-cta">Não encontrou sua dúvida?</h2>
+                    <p>Envie uma mensagem e a nossa equipe responde.</p>
+                    <a class="btn btn-claro" href="contato.html">Ir para contato</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grade">
+            <section class="footer-sobre">
+                <a class="logo" href="index.html">
+                    <img src="imagens/logo.svg" alt="Logotipo Conecta do Bem">
+                    <span class="logo-texto">Conecta do Bem</span>
+                </a>
+                <p>Plataforma de gestão de doadores e parceiros desenvolvida para apoiar a Turma do Bem na missão de gerar inclusão social através do sorriso.</p>
+            </section>
+
+            <nav aria-label="Links do rodapé">
+                <h2>Navegação</h2>
+                <ul class="footer-lista">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre o projeto</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <nav aria-label="Links da solução">
+                <h2>Solução</h2>
+                <ul class="footer-lista">
+                    <li><a href="solucao.html">Como funciona</a></li>
+                    <li><a href="painel.html">Painel de indicadores</a></li>
+                    <li><a href="doadores.html">Gestão de doadores</a></li>
+                </ul>
+            </nav>
+
+            <section>
+                <h2>Contato</h2>
+                <ul class="footer-lista">
+                    <li>contato@conectadobem.com.br</li>
+                    <li>FIAP - Av. Paulista, 1106 - São Paulo/SP</li>
+                    <li>Challenge 1TDS - 2026</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="footer-copy">
+            <p>&copy; 2026 Conecta do Bem - Projeto acadêmico FIAP em parceria com a Turma do Bem. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    </div>
 </body>
 </html>
