@@ -74,5 +74,4 @@ Também proporciona experiência prática com versionamento de código e trabalh
 ---
 
 *Desenvolvido com 💙 para conectar tecnologia, impacto social e sorrisos.* ☀️
-# Sprint-Front
-Um repositorio dedicado as sprints de front-end.
+
