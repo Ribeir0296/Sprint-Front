@@ -84,23 +84,28 @@ Também proporciona experiência prática com versionamento de código e trabalh
 
 ## 👩‍🏫 Autores
 - RM576314 — Enrique Trindade Ferreira Silva — 1TDSPA
-- LinkedIn: https://www.linkedin.com/in/enrique-trindade-46a0012b4/ — GitHub: https://github.com/enriquetrindade
+- LinkedIn: https://www.linkedin.com/in/enrique-trindade-46a0012b4/
+- GitHub: https://github.com/enriquetrindade
 <img src="img/enrique.jpeg" alt="integrante Enrique Trindade">
 
 - RM575649 — Júlio Bernardes da Silva — 1TDSPA
-- LinkedIn: https://www.linkedin.com/in/julio-bernardes-da-silva-40738b431/ — GitHub: https://github.com/JulioSilva101
+- LinkedIn: https://www.linkedin.com/in/julio-bernardes-da-silva-40738b431/
+- GitHub: https://github.com/JulioSilva101
 <img src="img/pollo.jpeg" alt="integrante Júlio Bernardes">
 
 - RM574491 — Marina Santana Queiroz — 1TDSPA
-- LinkedIn: https://www.linkedin.com/in/marina-santana-queiroz-9baa77241/ — GitHub: https://github.com/marinasantanaq
+- LinkedIn: https://www.linkedin.com/in/marina-santana-queiroz-9baa77241/
+- GitHub: https://github.com/marinasantanaq
 <img src="img/marina.jpeg" alt="integrante Marina Santana">
 
 - RM575635 — Rafael Madeira Gomes Ribeiro — 1TDSPA
-- LinkedIn: https://www.linkedin.com/in/rafael-madeira-b8545b312/ — GitHub: https://github.com/Ribeir0296
+- LinkedIn: https://www.linkedin.com/in/rafael-madeira-b8545b312/
+- GitHub: https://github.com/Ribeir0296
 <img src="img/rafael.jpeg" alt="integrante Rafael Madeira">
 
 - RM576524 — Sofia Oliveira Gonçalves — 1TDSPA
-- LinkedIn: https://www.linkedin.com/in/sofia-goncalves-272472431/ — GitHub: https://github.com/sofiaolivagoliva
+- LinkedIn: https://www.linkedin.com/in/sofia-goncalves-272472431/
+- GitHub: https://github.com/sofiaolivagoliva
 <img src="img/sofia.jpg" alt="integrante Sofia Gonçalves">
 
 ---
