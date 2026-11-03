@@ -1,15 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Protótipo do painel de indicadores e da gestão de doadores da Turma do Bem.">
+  <title>Protótipo | Turma do Bem</title>
+
+  <!-- Ícone da aba e fontes -->
+  <link rel="icon" href="imagens/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700&family=Roboto:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Estilos do site -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <h1>PÁGINA EM MANUTENÇÃO, VOLTE EM BREVE!</h1>
-    <a href="index.html">VOLTAR</a>
-</body>
+  <div class="pagina">
+    <!-- Cabeçalho: fica por cima da moldura azul -->
+    <header class="cabecalho">
+      <div class="topo container">
+        <a class="marca" href="index.html" aria-label="Turma do Bem - página inicial">
+          <img src="imagens/logo.svg" alt="">
+          <strong>Turma <span>do Bem</span></strong>
+        </a>
 
+        <button class="menu-botao" type="button" aria-label="Abrir menu"
+          aria-expanded="false" aria-controls="menu-principal">
+          <span></span>
+        </button>
+
+        <nav id="menu-principal" aria-label="Menu principal">
+          <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="solucao.html">Solução</a></li>
+            <li><a href="painel.html">Protótipo</a></li>
+            <li><a href="integrantes.html">Integrantes</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a class="menu-entrar" href="login.html">Entrar</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Moldura azul com a abertura da página -->
+      <div class="moldura">
+        <div class="brilho" aria-hidden="true"></div>
+        <img class="sol-fundo" src="imagens/sol-fino.svg" alt="">
+        <section class="abertura abertura-simples container">
+          <span class="selo">Protótipo</span>
+          <h1>Painel de indicadores <span class="destaque">e gestão de doadores.</span></h1>
+          <p>Uma prévia de como a equipe da ONG acompanharia a captação no dia a dia. Todos os dados desta página são fictícios.</p>
+        </section>
+      </div>
+
+      <!-- Indicadores e gráficos -->
+      <section class="secao" aria-labelledby="titulo-indicadores">
+        <div class="container">
+          <div class="secao-cabecalho revelar">
+            <h2 id="titulo-indicadores">Visão geral do mês</h2>
+          </div>
+
+          <div class="painel-indicadores revelar">
+            <article class="indicador">
+              <span>Arrecadado no mês</span>
+              <strong>R$ 48,2 mil</strong>
+              <small>+12% vs. mês anterior</small>
+            </article>
+            <article class="indicador">
+              <span>Doadores ativos</span>
+              <strong>1.284</strong>
+              <small>+86 novos</small>
+            </article>
+            <article class="indicador">
+              <span>Taxa de retenção</span>
+              <strong>78%</strong>
+              <small>+4 pontos</small>
+            </article>
+            <article class="indicador">
+              <span>Jovens apoiados</span>
+              <strong>312</strong>
+              <small>+27 no mês</small>
+            </article>
+          </div>
+
+          <div class="painel-graficos revelar">
+            <div class="bloco">
+              <h3>Arrecadação por mês (R$ mil)</h3>
+              <ul class="barras" aria-label="Arrecadação de junho a novembro">
+                <li><span style="--valor: 58%"></span>Jun</li>
+                <li><span style="--valor: 64%"></span>Jul</li>
+                <li><span style="--valor: 55%"></span>Ago</li>
+                <li><span style="--valor: 72%"></span>Set</li>
+                <li><span style="--valor: 80%"></span>Out</li>
+                <li><span style="--valor: 92%"></span>Nov</li>
+              </ul>
+            </div>
+
+            <div class="bloco">
+              <h3>Funil de captação</h3>
+              <ol class="funil">
+                <li style="--valor: 100%">Interessados <strong>2.400</strong></li>
+                <li style="--valor: 82%">Contatados <strong>1.650</strong></li>
+                <li style="--valor: 64%">Primeira doação <strong>920</strong></li>
+                <li style="--valor: 46%">Recorrentes <strong>540</strong></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gestão de doadores -->
+      <section class="secao" id="doadores" aria-labelledby="titulo-doadores">
+        <div class="container">
+          <div class="secao-cabecalho revelar">
+            <span class="selo">Gestão de doadores</span>
+            <h2 id="titulo-doadores">Doadores e parceiros</h2>
+            <p>Busque pelo nome ou filtre pela situação para encontrar quem precisa de atenção.</p>
+          </div>
+
+          <div class="bloco revelar">
+            <div class="filtros campos">
+              <input id="busca-doador" type="search" placeholder="Buscar por nome ou tipo" aria-label="Buscar doador">
+              <select id="filtro-status" aria-label="Filtrar por situação">
+                <option value="todos">Todas as situações</option>
+                <option value="ativo">Ativos</option>
+                <option value="novo">Novos</option>
+                <option value="pausado">Pausados</option>
+              </select>
+            </div>
+
+            <div class="tabela-area">
+              <table class="tabela">
+                <thead>
+                  <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Última doação</th>
+                    <th scope="col">Situação</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr data-status="ativo">
+                    <td>Ana Ribeiro</td>
+                    <td>Pessoa física</td>
+                    <td>R$ 80 - mensal</td>
+                    <td><span class="status status-ativo">Ativo</span></td>
+                  </tr>
+                  <tr data-status="ativo">
+                    <td>Construtora Horizonte</td>
+                    <td>Empresa</td>
+                    <td>R$ 5.000</td>
+                    <td><span class="status status-ativo">Ativo</span></td>
+                  </tr>
+                  <tr data-status="novo">
+                    <td>Lucas Andrade</td>
+                    <td>Pessoa física</td>
+                    <td>R$ 50</td>
+                    <td><span class="status status-novo">Novo</span></td>
+                  </tr>
+                  <tr data-status="pausado">
+                    <td>Clínica Sorriso Leve</td>
+                    <td>Parceiro</td>
+                    <td>Triagem em escolas</td>
+                    <td><span class="status status-pausado">Pausado</span></td>
+                  </tr>
+                  <tr data-status="ativo">
+                    <td>Beatriz Campos</td>
+                    <td>Pessoa física</td>
+                    <td>R$ 120 - mensal</td>
+                    <td><span class="status status-ativo">Ativo</span></td>
+                  </tr>
+                  <tr data-status="novo">
+                    <td>Grupo Aurora Alimentos</td>
+                    <td>Empresa</td>
+                    <td>R$ 12.000</td>
+                    <td><span class="status status-novo">Novo</span></td>
+                  </tr>
+                  <tr data-status="pausado">
+                    <td>Marcos Teixeira</td>
+                    <td>Pessoa física</td>
+                    <td>R$ 30</td>
+                    <td><span class="status status-pausado">Pausado</span></td>
+                  </tr>
+                  <tr>
+                    <td class="tabela-vazia" id="sem-resultado" colspan="4" hidden>Nenhum doador encontrado.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Chamada final -->
+      <section class="moldura chamada-final" aria-labelledby="titulo-cta">
+        <div class="brilho" aria-hidden="true"></div>
+        <h2 id="titulo-cta">Gostou da proposta?</h2>
+        <p>Crie sua conta para acompanhar a evolução do projeto.</p>
+        <div class="grupo-botoes">
+          <a class="botao" href="cadastro.html">Criar conta</a>
+          <a class="botao-secundario" href="solucao.html">Entender a solução</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <div class="container">
+        <div class="rodape-grade">
+          <div>
+            <a class="marca" href="index.html">
+              <img src="imagens/logo.svg" alt="">
+              <strong>Turma <span>do Bem</span></strong>
+            </a>
+            <p>Plataforma de gestão de doadores e parceiros pensada para apoiar a Turma do Bem na missão de gerar inclusão social através do sorriso.</p>
+          </div>
+
+          <nav aria-label="Links do rodapé">
+            <h2>Navegação</h2>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="sobre.html">Sobre o projeto</a></li>
+              <li><a href="integrantes.html">Integrantes</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </nav>
+
+          <nav aria-label="Links da solução">
+            <h2>Solução</h2>
+            <ul>
+              <li><a href="solucao.html">Como funciona</a></li>
+              <li><a href="painel.html">Painel de indicadores</a></li>
+              <li><a href="painel.html#doadores">Gestão de doadores</a></li>
+            </ul>
+          </nav>
+
+          <div>
+            <h2>Contato</h2>
+            <ul>
+              <li>contato@turmadobem.com.br</li>
+              <li>FIAP - Av. Paulista, 1106 - São Paulo/SP</li>
+              <li>Challenge 1TDS - 2026</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="rodape-copia">&copy; <span data-ano>2026</span> Turma do Bem - Projeto acadêmico FIAP em parceria com a Turma do Bem.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
