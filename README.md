@@ -2,20 +2,16 @@
 
 Projeto acadêmico desenvolvido para a disciplina de **Front-End Design Engineering**, da FIAP, no Challenge 2026, em parceria com a ONG Turma do Bem.
 
-## 💡 Sobre o projeto
+## 💙 Sobre o projeto
 
 O **Turma do Bem** é uma proposta de plataforma digital criada para modernizar e ampliar a presença digital da organização, facilitando o acesso às informações do projeto e apresentando uma solução para apoiar a gestão de doadores, empresas e parceiros.
 
 O website apresenta a proposta da plataforma, seus principais recursos, informações sobre o projeto e sua equipe, além de um protótipo visual para demonstrar a solução.
 
-## 🔋 Status do projeto
-
-A plataforma digital possuí 8 páginas, divididas entre informar sobre os projetos e sobre as organizações, orientar o usuário por onde prosseguir, junto à páginas para retirada de dúvidas, uma página para apresentação e contato dos integrantes do projeto, e um login com áreas de preenchimento para dados pessoais do usuário. Todo o fluxo é acessível e intuitivo, para garantir o contato e interesse nos projetos.
-
 ## 🎯 Objetivos
 
 - Desenvolver uma interface web organizada, intuitiva e responsiva.
-- Aplicar os fundamentos de HTML5 e CSS3.
+- Aplicar os fundamentos de HTML5, CSS3 e JavaScript.
 - Utilizar tags semânticas para estruturar o conteúdo.
 - Facilitar a navegação e a experiência dos usuários.
 - Apresentar a proposta de solução digital para a Turma do Bem.
@@ -24,29 +20,25 @@ A plataforma digital possuí 8 páginas, divididas entre informar sobre os proje
 ## 🛠️ Tecnologias utilizadas
 
 - **HTML5:** estruturação e organização das páginas.
-- **CSS3:** estilização, layout e identidade visual.
+- **CSS3:** estilização, layout e identidade visual (uma única folha de estilos).
+- **JavaScript:** menu do celular, validação dos formulários, FAQ, filtro de doadores e animações.
 - **Git:** controle de versão do projeto.
 - **GitHub:** armazenamento e gerenciamento do repositório.
 - **Visual Studio Code:** ambiente de desenvolvimento.
 
-## 🖥️ Como executar o projeto
-
-- Faça o download ou clone este repositório.
-- Abra a pasta do projeto.
-- Execute o arquivo index.htmlem um navegador.
-- Navegue pelas páginas utilizando os links disponíveis no site.
-
-## 🗃️ Estrutura do projeto
+## 📂 Estrutura do projeto
 
 ```text
 📁 projeto-turma-do-bem/
 ├── 📁 css/
-│   └── style.css
+│   └── style.css        # estilos de todas as páginas
+├── 📁 js/
+│   └── main.js          # interações de todas as páginas
 ├── 📁 imagens/
 │   ├── logo.svg
+│   ├── sol-fino.svg     # sol decorativo do fundo
 │   └── 📁 icones/
-├── 📁 img/
-│   └── dente-3d.png
+├── 📁 img/              # dente 3D e fotos dos integrantes
 ├── index.html
 ├── sobre.html
 ├── solucao.html
@@ -54,19 +46,22 @@ A plataforma digital possuí 8 páginas, divididas entre informar sobre os proje
 ├── integrantes.html
 ├── faq.html
 ├── contato.html
+├── login.html
+├── cadastro.html
 └── README.md
 ```
 
+
 ## ✨ Funcionalidades e páginas
 
-- **Login:** aba direcionada ao cadastro, via email e senha, para que, assim que logado, o usuário possa iniciar um processo de agendamento ou se tornar parceiro. 
-- **Início:** apresentação do projeto e contextualização do problema, com propostas para a saúde bucal no Brasil.
-- **Sobre:** informações sobre a Tuma do Bem, iniciativa e o projeto acadêmico, com a opção de enviar dúvidas com a equipe.
+- **Início:** apresentação do projeto e contextualização do problema da saúde bucal no Brasil.
+- **Sobre:** informações sobre a iniciativa e o projeto acadêmico.
 - **Solução:** apresentação da proposta e dos recursos da plataforma.
 - **Protótipo:** demonstração visual do painel de indicadores e da gestão de doadores.
 - **Integrantes:** apresentação da equipe responsável pelo desenvolvimento.
 - **FAQ:** perguntas frequentes sobre o projeto.
-- **Contato:** informações para entrar em contato com a equipe.
+- **Contato:** informações e formulário com validação.
+- **Login e Cadastro:** acesso à plataforma, com validação dos campos.
 
 ## 📚 Aprendizados
 
