@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Contêiner principal que engloba toda a interface do cartão de login -->
     <main class="auth-card">
         <section class="form-section">
             <div class="icon-sun">
@@ -20,15 +21,17 @@
             <h1 class="title">Seja bem vindo á Turma do Bem</h1>
             <p class="subtitle">aqui você agendará serviços gratúitos para a sua saúde</p>
 
-            <form action="processa_login.php" method="POST">
+            <!-- O coração funcional da página: envia os dados de forma segura (POST) -->
+            <form action="#" method="POST">
 
-                 <a href="cadastro.html" class="btn-outline">Nao tenho uma conta</a>
+                 <a href="cadastro.html" class="btn-outline">Não tenho uma conta</a>
                  <br>
 
                 <div class="divider">
                     <hr> <span>ou</span> <hr>
                 </div>
 
+                <!-- Campos de entrada de dados do usuário (obrigatórios para o envio) -->
                 <div class="input-group">
                     <input type="email" name="email" id="email" placeholder="Email" autocomplete="email" aria-label="Email" required>
                 </div>
@@ -37,6 +40,7 @@
                     <input type="password" name="senha" id="senha" placeholder="Senha" autocomplete="Senha" aria-label="Senha" required>
                 </div>
 
+                <!-- Disparador da ação do formulário -->
                 <div class="submit">
                     <button type="submit" class="btn-arrow" aria-label="Continuar">Entrar</button>
                 </div>
@@ -50,7 +54,6 @@
                 </div>
             </form>
 
-            <p class="terms">Ao continuar, você concorda com <a href="#">nossos termos</a>.</p>
         </section>
 
         <div class="image-section">
