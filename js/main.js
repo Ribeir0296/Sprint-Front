@@ -81,9 +81,18 @@ perguntas.forEach(function (pergunta) {
 
 
 // 6. Validação dos formulários de cadastro, login e contato.
+// Expressão regular (regex) que confere o formato do email:
+// ^[^\s@]+  -> começa com 1 ou mais caracteres que não são espaço nem @
+// @         -> precisa ter um @
+// [^\s@]+   -> depois do @, o domínio (ex.: gmail)
+// \.        -> um ponto literal
+// [^\s@]+$  -> termina com a extensão (ex.: com)
 const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+// Recebe um campo e devolve o texto do erro.
+// Se devolver "" (vazio), o campo está válido.
 function validarCampo(campo) {
+  // trim() tira os espaços das pontas, assim "   " conta como vazio.
   const valor = campo.value.trim();
 
   if (campo.required && valor === "") {
@@ -94,6 +103,9 @@ function validarCampo(campo) {
     return "Digite um email válido.";
   }
 
+  // minLength vale -1 quando o campo não define tamanho mínimo,
+  // por isso só comparamos quando ele é maior que 0.
+  // TODO: tornar a mensagem genérica (hoje ela fala sempre em "senha").
   if (campo.minLength > 0 && valor.length < campo.minLength) {
     return "A senha precisa ter pelo menos " + campo.minLength + " caracteres.";
   }
@@ -119,8 +131,12 @@ document.querySelectorAll("form[data-validar]").forEach(function (formulario) {
   });
 
   formulario.addEventListener("submit", function (evento) {
+    // preventDefault() impede o envio padrão do navegador, que recarregaria
+    // a página. Assim a validação roda antes e podemos mostrar o aviso.
     evento.preventDefault();
 
+    // Guarda só o primeiro erro para mostrar uma mensagem por vez,
+    // e leva o foco do teclado para esse campo.
     let primeiroErro = "";
 
     campos.forEach(function (campo) {
@@ -130,6 +146,7 @@ document.querySelectorAll("form[data-validar]").forEach(function (formulario) {
       campo.classList.toggle("invalido", erro !== "");
 
       if (erro) {
+        // aria-invalid avisa leitores de tela que o campo está com erro (acessibilidade).
         campo.setAttribute("aria-invalid", "true");
         if (!primeiroErro) {
           primeiroErro = erro;
@@ -147,6 +164,9 @@ document.querySelectorAll("form[data-validar]").forEach(function (formulario) {
     formulario.reset();
 
     // Leva para a próxima página, quando o formulário pedir.
+    // dataset lê atributos "data-*" do HTML. Aqui, data-sucesso e data-destino
+    // definem a mensagem e a próxima página de cada formulário,
+    // então o mesmo JavaScript serve para login, cadastro e contato.
     const destino = formulario.dataset.destino;
     if (destino) {
       setTimeout(function () {
@@ -173,6 +193,9 @@ function filtrarDoadores() {
     const combinaStatus = status === "todos" || linha.dataset.status === status;
     const mostrar = combinaTexto && combinaStatus;
 
+    // linha.hidden = true esconde a linha da tabela sem apagá-la do HTML.
+    // includes() procura o texto digitado dentro do texto da linha inteira;
+    // toLowerCase() nos dois lados faz a busca ignorar maiúsculas e minúsculas.
     linha.hidden = !mostrar;
     if (mostrar) visiveis++;
   });
@@ -180,6 +203,8 @@ function filtrarDoadores() {
   semResultado.hidden = visiveis > 0;
 }
 
+// O "if" protege as outras páginas: só liga os eventos se os elementos
+// existirem (eles só existem em painel.html).
 if (busca && filtroStatus) {
   busca.addEventListener("input", filtrarDoadores);
   filtroStatus.addEventListener("change", filtrarDoadores);
