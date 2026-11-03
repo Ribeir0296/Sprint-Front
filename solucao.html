@@ -1,15 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Como a plataforma da Turma do Bem organiza doadores, parceiros e o funil de captação.">
+  <title>Solução | Turma do Bem</title>
+
+  <!-- Ícone da aba e fontes -->
+  <link rel="icon" href="imagens/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700&family=Roboto:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Estilos do site -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <h1>PÁGINA EM MANUTENÇÃO, VOLTE EM BREVE!</h1>
-    <a href="index.html">VOLTAR</a>
-</body>
+  <div class="pagina">
+    <!-- Cabeçalho: fica por cima da moldura azul -->
+    <header class="cabecalho">
+      <div class="topo container">
+        <a class="marca" href="index.html" aria-label="Turma do Bem - página inicial">
+          <img src="imagens/logo.svg" alt="">
+          <strong>Turma <span>do Bem</span></strong>
+        </a>
 
+        <button class="menu-botao" type="button" aria-label="Abrir menu"
+          aria-expanded="false" aria-controls="menu-principal">
+          <span></span>
+        </button>
+
+        <nav id="menu-principal" aria-label="Menu principal">
+          <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="solucao.html">Solução</a></li>
+            <li><a href="painel.html">Protótipo</a></li>
+            <li><a href="integrantes.html">Integrantes</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a class="menu-entrar" href="login.html">Entrar</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Moldura azul com a abertura da página -->
+      <div class="moldura">
+        <div class="brilho" aria-hidden="true"></div>
+        <img class="sol-fundo" src="imagens/sol-fino.svg" alt="">
+        <section class="abertura abertura-simples container">
+          <span class="selo">A solução</span>
+          <h1>Uma plataforma para <span class="destaque">quem quer fazer o bem.</span></h1>
+          <p>Reunimos doadores, empresas e parceiros em um só lugar e transformamos dados em decisões, para que a Turma do Bem capte mais e atenda mais jovens.</p>
+          <div class="grupo-botoes">
+            <a class="botao" href="painel.html">Ver protótipo</a>
+            <a class="botao-secundario" href="#como-funciona">Como funciona</a>
+          </div>
+        </section>
+      </div>
+
+      <!-- Passo a passo -->
+      <section class="secao" id="como-funciona" aria-labelledby="titulo-como">
+        <div class="container">
+          <div class="secao-cabecalho revelar">
+            <span class="selo">Como funciona</span>
+            <h2 id="titulo-como">Do primeiro contato à doação recorrente</h2>
+            <p>Cada pessoa ou empresa interessada passa por uma jornada simples e acompanhada.</p>
+          </div>
+
+          <ol class="etapas revelar">
+            <li>
+              <h3>Cadastro</h3>
+              <p>O doador ou parceiro cria a conta e informa como quer ajudar: doação, voluntariado ou parceria.</p>
+            </li>
+            <li>
+              <h3>Qualificação</h3>
+              <p>A inteligência artificial analisa o perfil e indica as oportunidades com mais chance de conversão.</p>
+            </li>
+            <li>
+              <h3>Acompanhamento</h3>
+              <p>A equipe da ONG acompanha cada contato no funil de captação, sem planilhas espalhadas.</p>
+            </li>
+            <li>
+              <h3>Relacionamento</h3>
+              <p>Agradecimentos, lembretes e relatórios de impacto mantêm o doador engajado por mais tempo.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Para quem -->
+      <section class="secao" aria-labelledby="titulo-perfis">
+        <div class="container">
+          <div class="secao-cabecalho revelar">
+            <span class="selo">Para quem</span>
+            <h2 id="titulo-perfis">Um lugar para cada tipo de apoio</h2>
+          </div>
+
+          <div class="grade-4 revelar">
+            <article class="cartao">
+              <div class="cartao-icone"><img src="imagens/icones/usuarios.svg" alt=""></div>
+              <h3>Pessoas físicas</h3>
+              <p>Doações únicas ou mensais, com histórico e comprovantes sempre à mão.</p>
+            </article>
+            <article class="cartao">
+              <div class="cartao-icone cartao-icone-areia"><img src="imagens/icones/grafico.svg" alt=""></div>
+              <h3>Empresas</h3>
+              <p>Patrocínios e campanhas com indicadores de impacto para o relatório da empresa.</p>
+            </article>
+            <article class="cartao">
+              <div class="cartao-icone"><img src="imagens/icones/engrenagem.svg" alt=""></div>
+              <h3>Parceiros</h3>
+              <p>Clínicas, escolas e instituições que ampliam o alcance da triagem.</p>
+            </article>
+            <article class="cartao">
+              <div class="cartao-icone cartao-icone-areia"><img src="imagens/icones/ia.svg" alt=""></div>
+              <h3>Equipe da ONG</h3>
+              <p>Painel com prioridades do dia, metas de captação e alertas automáticos.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefícios -->
+      <section class="secao">
+        <div class="container duas-colunas revelar">
+          <h2>Por que isso <span class="destaque">faz diferença?</span></h2>
+          <div>
+            <p>Hoje, parte do relacionamento com doadores depende de controles manuais. Isso dificulta saber quem está engajado, quem parou de doar e onde vale investir esforço.</p>
+            <p>Com os dados organizados, a ONG enxerga o funil inteiro, age antes de perder um doador e mostra com clareza o impacto de cada contribuição. Mais doadores mantidos significam mais jovens atendidos.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Chamada final -->
+      <section class="moldura chamada-final" aria-labelledby="titulo-cta">
+        <div class="brilho" aria-hidden="true"></div>
+        <h2 id="titulo-cta">Veja na prática</h2>
+        <p>Explore o protótipo do painel com indicadores e a lista de doadores.</p>
+        <div class="grupo-botoes">
+          <a class="botao" href="painel.html">Abrir protótipo</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <div class="container">
+        <div class="rodape-grade">
+          <div>
+            <a class="marca" href="index.html">
+              <img src="imagens/logo.svg" alt="">
+              <strong>Turma <span>do Bem</span></strong>
+            </a>
+            <p>Plataforma de gestão de doadores e parceiros pensada para apoiar a Turma do Bem na missão de gerar inclusão social através do sorriso.</p>
+          </div>
+
+          <nav aria-label="Links do rodapé">
+            <h2>Navegação</h2>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="sobre.html">Sobre o projeto</a></li>
+              <li><a href="integrantes.html">Integrantes</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </nav>
+
+          <nav aria-label="Links da solução">
+            <h2>Solução</h2>
+            <ul>
+              <li><a href="solucao.html">Como funciona</a></li>
+              <li><a href="painel.html">Painel de indicadores</a></li>
+              <li><a href="painel.html#doadores">Gestão de doadores</a></li>
+            </ul>
+          </nav>
+
+          <div>
+            <h2>Contato</h2>
+            <ul>
+              <li>contato@turmadobem.com.br</li>
+              <li>FIAP - Av. Paulista, 1106 - São Paulo/SP</li>
+              <li>Challenge 1TDS - 2026</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="rodape-copia">&copy; <span data-ano>2026</span> Turma do Bem - Projeto acadêmico FIAP em parceria com a Turma do Bem.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
