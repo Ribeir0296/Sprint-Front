@@ -71,6 +71,12 @@ ul, ol { list-style: none; }
     z-index: 3;
 }
 
+/*etiqueta do coiteinar, abaixo do cabeçalho, mover para baixo.*/
+.etiqueta{
+  transform: translateY(15px);
+}
+
+
 .form-section {
     position: relative;
     z-index: 2;
@@ -119,9 +125,18 @@ form {
     align-items: center;
 }
 
+/*deixando o mesmo espaçamento entre alguns elementos que fazem sentido, no "fale com a nss equipe>contato".*/
+.contato-form{
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
 .btn-primary {
-    display: block;
+    display: flex;
     width: 100%;
+    margin-top: 15px;
+    
     background-color: var(--bege);
     color: var(--texto-botao);
     border: none;
@@ -131,10 +146,12 @@ form {
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
+    
     margin-bottom: 14px;
     transition: background-color 0.25s, transform 0.15s;
 }
-
+/* 
+ */
 .btn-primary:hover { background-color: #e3d5c7; }
 .btn-primary:active { transform: translateY(1px); }
 
@@ -178,8 +195,13 @@ form {
 /* Campos de texto */
 .input-group {
     position: relative;
+    top: 2%;
     width: 100%;
     margin-bottom: 12px;
+}
+/*alinhamento para esquerda.*/
+#mensagem{
+  margin-right: auto;
 }
 
 .input-group input {
@@ -210,9 +232,9 @@ form {
 
 .btn-arrow {
     position: absolute;
-    right: 8px;
-    top: 50%;
-    transform: translateY(-50%);
+    right: 50%;
+    top: 77%;
+    /* transform: translateY(-50%); */
     width: 28px;
     height: 28px;
     background: transparent;
@@ -237,6 +259,8 @@ form {
     gap: 8px;
     cursor: pointer;
     position: relative;
+    top: 1%;
+    right: 7%;
     color: var(--laranja);
     font-size: 0.8rem;
     font-weight: 700;
@@ -375,18 +399,31 @@ form {
     align-items: center;
     gap: 10px;
     text-decoration: none;
+    white-space: nowrap;
+    transform: translateY(28%);
+}
+/* display: inline-flex; em linha/lado a lado.
+white-space: nowrap; não deixa 0 texto dividido. temos uma divisao em span no html.
+transform: translateY(28%); irá descer a logo. */
+
+.logo img {
+    width: 38px;
+    height: 38px;
 }
 
-.logo img { width: 38px; height: 38px; }
-
 .logo-texto {
+    display: inline;
     color: var(--laranja);
     font-size: 1.15rem;
     font-weight: 700;
     letter-spacing: -0.005em;
+    white-space: nowrap;
 }
 
-.logo-texto span { color: var(--bege); }
+.logo-texto span {
+    display: inline;
+    color: var(--bege);
+}
 
 .menu-lista { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
 
@@ -485,8 +522,20 @@ form {
 
 
 .secao { position: relative; padding: 72px 0; }
-.secao-destaque { background: var(--vidro); }
-.secao-clara { background: rgba(8, 26, 70, 0.28); }
+.secao-destaque {
+    background: var(--vidro);
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    left: auto;
+  }
+.secao-clara { background: rgba(8, 26, 70, 0.28);}
+/* .secao-destaque, para alinhar ao centro, a largura ocupar 100% do pré definido, e regular o tam do max largura em px.*/
+.secao-destaque .container {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+}
 
 .secao-cabecalho { max-width: 62ch; margin: 0 auto 40px; text-align: center; }
 .secao-cabecalho .etiqueta { margin-bottom: 14px; }
