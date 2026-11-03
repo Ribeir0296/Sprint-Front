@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Entre em contato com a equipe do projeto Turma do Bem.">
-  <title>Contato | Turma do Bem</title>
+  <meta name="description" content="Crie sua conta na plataforma da Turma do Bem.">
+  <title>Cadastro | Turma do Bem</title>
 
   <!-- Ícone da aba e fontes -->
   <link rel="icon" href="img/imagens/logo.svg" type="image/svg+xml">
@@ -18,132 +18,136 @@
 
 <body>
   <div class="pagina">
-    <!-- Cabeçalho: fica por cima da moldura azul -->
-    <header class="cabecalho">
-      <div class="topo container">
-        <a class="marca" href="index.html" aria-label="Turma do Bem - página inicial">
-          <img src="img/imagens/logo.svg" alt="">
-          <strong>Turma <span>do Bem</span></strong>
+    <main class="moldura acesso">
+      <!-- Área de cadastro -->
+      <section class="acesso-form">
+        <a href="index.html" aria-label="Voltar para a página inicial">
+          <img class="acesso-logo" src="img/imagens/logo.svg" alt="Símbolo da Turma do Bem">
         </a>
 
-        <button class="menu-botao" type="button" aria-label="Abrir menu"
-          aria-expanded="false" aria-controls="menu-principal">
-          <span></span>
-        </button>
+        <h1>Crie sua conta</h1>
+        <p class="subtitulo">Preencha os dados abaixo para se cadastrar na plataforma.</p>
 
-        <nav id="menu-principal" aria-label="Menu principal">
-          <ul class="menu">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="solucao.html">Solução</a></li>
-            <li><a href="painel.html">Protótipo</a></li>
-            <li><a href="integrantes.html">Integrantes</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a class="menu-entrar" href="login.html">Entrar</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+        <form class="campos" novalidate data-validar
+          data-sucesso="Cadastro realizado! Levando você para o login..."
+          data-destino="login.html">
+          <input name="nome" type="text" placeholder="Nome Completo"
+            aria-label="Nome completo" autocomplete="name" required>
+          <input name="email" type="email" placeholder="Email"
+            aria-label="Email" autocomplete="email" required>
+          <input name="senha" type="password" placeholder="Crie uma Senha"
+            aria-label="Crie uma senha" autocomplete="new-password" minlength="6" required>
 
-    <main>
-      <!-- Moldura azul com a abertura da página -->
-      <div class="moldura">
+          <button class="botao" type="submit">Finalizar Cadastro</button>
+          <p class="aviso" role="status" aria-live="polite"></p>
+
+          <div class="ou"><span></span>ou<span></span></div>
+          <a class="botao-secundario" href="login.html">Já tenho uma conta</a>
+        </form>
+
+        <p class="termos">Ao se cadastrar, você concorda com <a href="#">nossos termos</a>.</p>
+        <a class="voltar" href="index.html">&larr; Voltar para o início</a>
+      </section>
+
+      <!-- Área de apresentação dos serviços -->
+      <section class="vitrine">
         <div class="brilho" aria-hidden="true"></div>
         <img class="sol-fundo" src="imagens/sol-fino.svg" alt="">
-        <section class="abertura abertura-simples container">
-          <span class="selo">Contato</span>
-          <h1>Fale com a <span class="destaque">nossa equipe.</span></h1>
-          <p>Tem uma dúvida, sugestão ou quer conversar sobre o projeto? Envie uma mensagem.</p>
-        </section>
-      </div>
 
-      <!-- Informações + formulário -->
-      <section class="secao">
-        <div class="container contato revelar">
-          <div class="contato-info">
-            <article class="cartao">
-              <h3>Email</h3>
-              <p>contato@turmadobem.com.br</p>
-            </article>
-            <article class="cartao">
-              <h3>Endereço</h3>
-              <p>FIAP - Av. Paulista, 1106 - São Paulo/SP</p>
-            </article>
-            <article class="cartao">
-              <h3>Projeto</h3>
-              <p>Challenge 1TDS - 2026, em parceria com a Turma do Bem.</p>
-            </article>
-          </div>
+        <div>
+          <span class="selo">Turma do Bem</span>
+          <h2>Cuidar do sorriso é cuidar da <span class="destaque">pessoa inteira.</span></h2>
+        </div>
 
-          <!-- Os atributos "name" já deixam o formulário pronto para o back-end -->
-          <form class="contato-form campos" method="POST" novalidate
-            data-validar data-sucesso="Mensagem enviada! Responderemos em breve.">
-            <input type="text" name="nome" placeholder="Nome Completo"
-              aria-label="Nome completo" autocomplete="name" required>
-            <input type="email" name="email" placeholder="Email"
-              aria-label="Email" autocomplete="email" required>
-            <select name="assunto" aria-label="Assunto" required>
-              <option value="" disabled selected>Assunto</option>
-              <option value="duvida">Dúvida</option>
-              <option value="sugestao">Sugestão</option>
-              <option value="parceria">Parceria ou doação</option>
-              <option value="outro">Outro</option>
-            </select>
-            <textarea name="mensagem" placeholder="Sua mensagem"
-              aria-label="Sua mensagem" required></textarea>
+        <div class="arcos">
+          <!-- Serviço 1: Odontologia -->
+          <figure class="servico">
+            <div class="arco laranja">
+              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M30 14C18 12 10 22 14 38C17 50 20 58 22 74C23 84 30 88 33 76C35 68 38 62 50 62C62 62 65 68 67 76C70 88 77 84 78 74C80 58 83 50 86 38C90 22 82 12 70 14C62 16 56 20 50 20C44 20 38 16 30 14Z"/>
+              </svg>
+            </div>
+            <figcaption>
+              <strong class="texto-laranja">Odontologia</strong>
+              <span>Cuidado com o sorriso</span>
+            </figcaption>
+          </figure>
 
-            <button class="botao" type="submit">Enviar mensagem</button>
-            <p class="aviso" role="status" aria-live="polite"></p>
-          </form>
+          <!-- Serviço 2: Psicologia -->
+          <figure class="servico">
+            <div class="arco areia">
+              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 14C20 46 30 62 50 62C70 62 80 46 80 14"/>
+                <line x1="50" y1="8" x2="50" y2="92"/>
+              </svg>
+            </div>
+            <figcaption>
+              <strong class="texto-areia">Psicologia</strong>
+              <span>Cuidado com a mente</span>
+            </figcaption>
+          </figure>
+
+          <!-- Serviço 3: Acolhimento -->
+          <figure class="servico">
+            <div class="arco claro">
+              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M50 88C18 64 10 46 10 33C10 20 20 11 32 11C40 11 46 16 50 23C54 16 60 11 68 11C80 11 90 20 90 33C90 46 82 64 50 88Z"/>
+                <g transform="translate(25 19) scale(.5)" stroke-width="10">
+                  <circle cx="50" cy="36" r="22"/>
+                  <line x1="50" y1="58" x2="50" y2="90"/>
+                  <line x1="35" y1="75" x2="65" y2="75"/>
+                </g>
+              </svg>
+            </div>
+            <figcaption>
+              <strong class="texto-laranja">Acolhimento</strong>
+              <span>Cuidado com você</span>
+            </figcaption>
+          </figure>
+
+          <!-- Serviço 4: Atendimento gratuito -->
+          <figure class="servico">
+            <div class="arco areia">
+              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <defs>
+                  <mask id="corte">
+                    <rect width="100" height="100" fill="#fff"/>
+                    <line x1="14" y1="14" x2="86" y2="86" stroke="#000" stroke-width="15"/>
+                  </mask>
+                </defs>
+                <g mask="url(#corte)">
+                  <path d="M39 31C24 40 15 55 16 69C17 82 28 89 50 89C72 89 83 82 84 69C85 55 76 40 61 31Z"/>
+                  <path d="M39 31L33 15C43 19 57 19 67 15L61 31"/>
+                  <path d="M57 53C55 50.5 52.5 49.5 50 49.5C45.5 49.5 43 52 43 55.5C43 63 57 59.5 57 67.5C57 71 54.5 74 50 74C46.5 74 44 72.5 42.5 70" stroke-width="4.5"/>
+                  <line x1="50" y1="44" x2="50" y2="79" stroke-width="4.5"/>
+                </g>
+                <line x1="14" y1="14" x2="86" y2="86"/>
+              </svg>
+            </div>
+            <figcaption>
+              <strong class="texto-areia">Sem custos</strong>
+              <span>Atendimento gratuito</span>
+            </figcaption>
+          </figure>
+
+          <!-- Serviço 5: Doação e colaboração -->
+          <figure class="servico">
+            <div class="arco laranja">
+              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M56 46C43 37 37 31 37 24C37 18.5 41 15 45.5 15C49.5 15 52.5 17 56 21C59.5 17 62.5 15 66.5 15C71 15 75 18.5 75 24C75 31 69 37 56 46Z"/>
+                <rect x="7" y="60" width="13" height="30" rx="3"/>
+                <path d="M20 65H37C43 65 47 67 51 71H62C67 71 67 79 62 79H47"/>
+                <path d="M20 86H55C59 86 62 85 65 83.5L86 71.5C91.5 68.5 88.5 60.5 82 63.5L64.5 72.5"/>
+              </svg>
+            </div>
+            <figcaption>
+              <strong class="texto-laranja">Faça o bem</strong>
+              <span>Seja doador ou colaborador</span>
+            </figcaption>
+          </figure>
         </div>
       </section>
     </main>
-
-    <footer class="rodape">
-      <div class="container">
-        <div class="rodape-grade">
-          <div>
-            <a class="marca" href="index.html">
-              <img src="imagens/logo.svg" alt="">
-              <strong>Turma <span>do Bem</span></strong>
-            </a>
-            <p>Plataforma de gestão de doadores e parceiros pensada para apoiar a Turma do Bem na missão de gerar inclusão social através do sorriso.</p>
-          </div>
-
-          <nav aria-label="Links do rodapé">
-            <h2>Navegação</h2>
-            <ul>
-              <li><a href="index.html">Início</a></li>
-              <li><a href="sobre.html">Sobre o projeto</a></li>
-              <li><a href="integrantes.html">Integrantes</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              <li><a href="contato.html">Contato</a></li>
-            </ul>
-          </nav>
-
-          <nav aria-label="Links da solução">
-            <h2>Solução</h2>
-            <ul>
-              <li><a href="solucao.html">Como funciona</a></li>
-              <li><a href="painel.html">Painel de indicadores</a></li>
-              <li><a href="painel.html#doadores">Gestão de doadores</a></li>
-            </ul>
-          </nav>
-
-          <div>
-            <h2>Contato</h2>
-            <ul>
-              <li>contato@turmadobem.com.br</li>
-              <li>FIAP - Av. Paulista, 1106 - São Paulo/SP</li>
-              <li>Challenge 1TDS - 2026</li>
-            </ul>
-          </div>
-        </div>
-
-        <p class="rodape-copia">&copy; <span data-ano>2026</span> Turma do Bem - Projeto acadêmico FIAP em parceria com a Turma do Bem.</p>
-      </div>
-    </footer>
   </div>
 
   <script src="js/main.js"></script>
