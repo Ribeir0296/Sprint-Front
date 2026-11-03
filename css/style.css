@@ -20,7 +20,10 @@
    ========================================================== */
 
 
-/* 1. Cores, fontes e medidas */
+/* 1. Cores, fontes e medidas
+   Variáveis CSS (custom properties): guardam valores num só lugar.
+   Para mudar a cor do site inteiro, basta alterar aqui.
+   Para usar: color: var(--laranja); */
 :root {
   --fundo: #1e1e1e;
   --laranja: #e8a56f;
@@ -969,7 +972,11 @@ p {
   font-size: 1.05rem;
 }
 
-/* Gráfico de barras feito só com CSS */
+/* Gráfico de barras feito só com CSS:
+   - cada <span> recebe a altura pela variável --valor, escrita no HTML
+     (ex.: style="--valor: 70%");
+   - flex-end alinha as barras pela base;
+   - a animação "crescer" faz a barra subir ao carregar. */
 .barras {
   height: 220px;
   display: flex;
@@ -1001,6 +1008,8 @@ p {
   animation: crescer 0.9s ease-out both;
 }
 
+/* nth-child(even) pinta as barras pares com a cor areia,
+   alternando as cores sem precisar de classes extras. */
 .barras li:nth-child(even) span {
   background: linear-gradient(180deg, var(--areia), rgba(213, 196, 180, 0.3));
 }
