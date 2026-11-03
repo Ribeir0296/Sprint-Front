@@ -77,31 +77,86 @@ Também proporciona experiência prática com versionamento de código e trabalh
 **Projeto:** Challenge FIAP + Turma do Bem  
 **Ano:** 2026
 
-## 👩‍🏫 Autores
-- RM576314 — Enrique Trindade Ferreira Silva — 1TDSPA
-- LinkedIn: https://www.linkedin.com/in/enrique-trindade-46a0012b4/
-- GitHub: https://github.com/enriquetrindade
-<img src="img/enrique.jpeg" alt="integrante Enrique Trindade">
 
-- RM575649 — Júlio Bernardes da Silva — 1TDSPA
-- LinkedIn: https://www.linkedin.com/in/julio-bernardes-da-silva-40738b431/
-- GitHub: https://github.com/JulioSilva101
-<img src="img/pollo.jpeg" alt="integrante Júlio Bernardes">
+## 👥 Nossa Equipe
+<div align="center">
 
-- RM574491 — Marina Santana Queiroz — 1TDSPA
-- LinkedIn: https://www.linkedin.com/in/marina-santana-queiroz-9baa77241/
-- GitHub: https://github.com/marinasantanaq
-<img src="img/marina.jpeg" alt="integrante Marina Santana">
+<table>
+  <tr>
+    <td align="center" width="180">
+      <img src="img/rafael.jpeg" width="80" height="80" alt="Rafael Madeira"/>
+      <br><br>
+      <strong>Rafael Madeira</strong>
+      <br>
+      <sub>Front-end</sub>
+      <br>
+      <sub>RM 575635 · 1TDSPA</sub>
+      <br><br>
+      <a href="https://www.linkedin.com/in/rafael-madeira-b8545b312/">LinkedIn</a>
+      ·
+      <a href="https://github.com/Ribeir0296">GitHub</a>
+    </td>
 
-- RM575635 — Rafael Madeira Gomes Ribeiro — 1TDSPA
-- LinkedIn: https://www.linkedin.com/in/rafael-madeira-b8545b312/
-- GitHub: https://github.com/Ribeir0296
-<img src="img/rafael.jpeg" alt="integrante Rafael Madeira">
+<td align="center" width="180">
+  <img src="img/enrique.jpeg" width="80" height="80" alt="Enrique Trindade"/>
+  <br><br>
+  <strong>Enrique Trindade</strong>
+  <br>
+  <sub>Back-end e Banco de Dados</sub>
+  <br>
+  <sub>RM 576314 · 1TDSPA</sub>
+  <br><br>
+  <a href="https://www.linkedin.com/in/enrique-trindade-46a0012b4/">LinkedIn</a>
+  ·
+  <a href="https://github.com/enriquetrindade">GitHub</a>
+</td>
 
-- RM576524 — Sofia Oliveira Gonçalves — 1TDSPA
-- LinkedIn: https://www.linkedin.com/in/sofia-goncalves-272472431/
-- GitHub: https://github.com/sofiaolivagoliva
-<img src="img/sofia.jpg" alt="integrante Sofia Gonçalves">
+<td align="center" width="180">
+  <img src="img/pollo.jpeg" width="80" height="80" alt="Julio Bernardes"/>
+  <br><br>
+  <strong>Julio Bernardes</strong>
+  <br>
+  <sub>Desenvolvimento Python</sub>
+  <br>
+  <sub>RM 575649 · 1TDSPA</sub>
+  <br><br>
+  <a href="https://www.linkedin.com/in/julio-bernardes-da-silva-40738b431/">LinkedIn</a>
+  ·
+  <a href="https://github.com/JulioSilva101">GitHub</a>
+</td>
+
+<td align="center" width="180">
+  <img src="img/marina.jpeg" width="80" height="80" alt="Marina Queiroz"/>
+  <br><br>
+  <strong>Marina Queiroz</strong>
+  <br>
+  <sub>Tester</sub>
+  <br>
+  <sub>RM 574491 · 1TDSPA</sub>
+  <br><br>
+  <a href="https://www.linkedin.com/in/marina-santana-queiroz-9baa77241/">LinkedIn</a>
+  ·
+  <a href="https://github.com/marinasantanaq">GitHub</a>
+</td>
+
+<td align="center" width="180">
+  <img src="img/sofia.jpg" width="80" height="80" alt="Sofia Oliveira Gonçalves"/>
+  <br><br>
+  <strong>Sofia Oliveira Gonçalves</strong>
+  <br>
+  <sub>Designer</sub>
+  <br>
+  <sub>RM 576524 · 1TDSPA</sub>
+  <br><br>
+  <a href="https://www.linkedin.com/in/sofia-goncalves-272472431/">LinkedIn</a>
+  ·
+  <a href="https://github.com/sofiaolivagoliva">GitHub</a>
+</td>
+
+  </tr>
+</table>
+
+</div>
 
 ---
 
