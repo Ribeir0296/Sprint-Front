@@ -1,173 +1,207 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conheça os cinco integrantes do grupo que desenvolveu o Conecta do Bem.">
-    <title>Integrantes | Conecta do Bem</title>
-    <link rel="icon" href="imagens/logo.svg" type="image/svg+xml">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700&family=Roboto:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="pagina">
-    <header class="header">
-        <div class="container header-conteudo">
-            <a class="logo" href="index.html" aria-label="Conecta do Bem - página inicial">
-                <img src="imagens/logo.svg" alt="Logotipo Conecta do Bem: um sol">
-                <span class="logo-texto">Turma <span>do Bem</span></span>
-            </a>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça os cinco integrantes do grupo que desenvolveu o projeto.">
+  <title>Integrantes | Turma do Bem</title>
 
-            <!-- Menu principal de navegação -->
-            <nav aria-label="Menu principal">
-                <ul class="menu-lista">
-                    <li><a class="menu-link" href="index.html">Início</a></li>
-                    <li><a class="menu-link" href="sobre.html">Sobre</a></li>
-                    <li><a class="menu-link" href="solucao.html">Solução</a></li>
-                    <li><a class="menu-link" href="painel.html">Protótipo</a></li>
-                    <li><a class="menu-link ativo" aria-current="page" href="integrantes.html">Integrantes</a></li>
-                    <li><a class="menu-link" href="faq.html">FAQ</a></li>
-                    <li><a class="menu-link" href="contato.html">Contato</a></li>
-                    <li><a class="menu-link menu-link-destaque" href="login.html">Entrar</a></li>
-                </ul>
-            </nav>
-        </div>
+  <!-- Ícone da aba e fontes -->
+  <link rel="icon" href="imagens/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700&family=Roboto:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Estilos do site -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="pagina">
+    <!-- Cabeçalho: fica por cima da moldura azul -->
+    <header class="cabecalho">
+      <div class="topo container">
+        <a class="marca" href="index.html" aria-label="Turma do Bem - página inicial">
+          <img src="imagens/logo.svg" alt="">
+          <strong>Turma <span>do Bem</span></strong>
+        </a>
+
+        <button class="menu-botao" type="button" aria-label="Abrir menu"
+          aria-expanded="false" aria-controls="menu-principal">
+          <span></span>
+        </button>
+
+        <nav id="menu-principal" aria-label="Menu principal">
+          <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="solucao.html">Solução</a></li>
+            <li><a href="painel.html">Protótipo</a></li>
+            <li><a href="integrantes.html">Integrantes</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a class="menu-entrar" href="login.html">Entrar</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <section class="topo-pagina">
-            <div class="container">
-                <span class="etiqueta">Challenge 1TDS - FIAP</span>
-                <h1>Quem faz o Conecta do Bem</h1>
-                <p>Somos um grupo de cinco estudantes da FIAP que uniu tecnologia e propósito para apoiar a missão da Turma do Bem.</p>
-            </div>
+      <!-- Moldura azul com a abertura da página -->
+      <div class="moldura">
+        <div class="brilho" aria-hidden="true"></div>
+        <img class="sol-fundo" src="imagens/sol-fino.svg" alt="">
+        <section class="abertura abertura-simples container">
+          <span class="selo">Challenge 1TDS - FIAP</span>
+          <h1>Quem faz <span class="destaque">este projeto.</span></h1>
+          <p>Somos um grupo de cinco estudantes da FIAP que uniu tecnologia e propósito para apoiar a missão da Turma do Bem.</p>
         </section>
+      </div>
 
-        <section class="secao secao-compacta" aria-label="Integrantes do grupo">
-            <div class="container equipe">
-
-            <!-- INTEGRANTE 1: troque nome, função, RM, links e (opcional) a foto em img/integrante1.jpg -->
-            <article class="membro">
-                <div class="membro-foto" aria-hidden="true">
-                    <img src="img/rafael.jpeg" alt="">
-                </div>
-                <h2>Rafael Madeira</h2>
-                <p class="membro-funcao">Front-end</p>
-                <p class="membro-rm">RM 575635</p>
-                <p>Turma: 1TDSPA</p>
+      <!-- Integrantes em arcos -->
+      <section class="secao" aria-label="Integrantes do grupo">
+        <div class="container">
+          <div class="arcos equipe revelar">
+            <figure class="servico">
+              <div class="arco laranja">
+                <img src="img/rafael.jpeg" alt="Foto de Rafael Madeira">
+              </div>
+              <figcaption>
+                <strong class="texto-laranja">Rafael Madeira</strong>
+                <span>Front-end</span>
+                <span>RM 575635</span>
+                <span>1TDSPA</span>
                 <div class="membro-links">
-                    <a href="https://www.linkedin.com/in/rafael-madeira-b8545b312/" aria-label="LinkedIn de Nome Completo 1">LinkedIn</a>
-                    <a href="https://github.com/Ribeir0296" aria-label="GitHub de Nome Completo 1">GitHub</a>
+                  <a href="https://www.linkedin.com/in/rafael-madeira-b8545b312/" target="_blank" rel="noopener" aria-label="LinkedIn de Rafael Madeira">LinkedIn</a>
+                  <a href="https://github.com/Ribeir0296" target="_blank" rel="noopener" aria-label="GitHub de Rafael Madeira">GitHub</a>
                 </div>
-            </article>
+              </figcaption>
+            </figure>
 
-            <!-- INTEGRANTE 2: troque nome, função, RM, links e (opcional) a foto em img/integrante2.jpg -->
-            <article class="membro">
-                <div class="membro-foto" aria-hidden="true">
-                    <img src="img/enrique.jpeg" alt="">
-                </div>
-                <h2>Enrique Trindade</h2>
-                <p class="membro-funcao">Back-end e BDD</p>
-                <p class="membro-rm">RM: 576314</p>
-                <p>Turma: 1TDSPA</p>
+            <figure class="servico">
+              <div class="arco areia">
+                <img src="img/enrique.jpeg" alt="Foto de Enrique Trindade">
+              </div>
+              <figcaption>
+                <strong class="texto-areia">Enrique Trindade</strong>
+                <span>Back-end e BDD</span>
+                <span>RM 576314</span>
+                 <span>1TDSPA</span>
                 <div class="membro-links">
-                    <a href="https://www.linkedin.com/in/enrique-trindade-46a0012b4/" aria-label="LinkedIn de Nome Completo 2">LinkedIn</a>
-                    <a href="https://github.com/enriquetrindade" aria-label="GitHub de Nome Completo 2">GitHub</a>
+                  <a href="https://www.linkedin.com/in/enrique-trindade-46a0012b4/" target="_blank" rel="noopener" aria-label="LinkedIn de Enrique Trindade">LinkedIn</a>
+                  <a href="https://github.com/enriquetrindade" target="_blank" rel="noopener" aria-label="GitHub de Enrique Trindade">GitHub</a>
                 </div>
-            </article>
+              </figcaption>
+            </figure>
 
-            <article class="membro">
-                <div class="membro-foto" aria-hidden="true">
-                    <img src="img/pollo.jpeg" alt="">
-                </div>
-                <h2>Julio Bernardes</h2>
-                <p class="membro-funcao">Dev Python</p>
-                <p class="membro-rm">RM: 575649</p>
-                <p>Turma: 1TDSPA</p>
+            <figure class="servico">
+              <div class="arco claro">
+                <img src="img/pollo.jpeg" alt="Foto de Julio Bernardes">
+              </div>
+              <figcaption>
+                <strong class="texto-laranja">Julio Bernardes</strong>
+                <span>Dev Python</span>
+                <span>RM 575649</span>
+                <span>1TDSPA</span>
                 <div class="membro-links">
-                    <a href="https://www.linkedin.com/in/julio-bernardes-da-silva-40738b431/" aria-label="LinkedIn de Nome Completo 3">LinkedIn</a>
-                    <a href="https://github.com/JulioSilva101" aria-label="GitHub de Nome Completo 3">GitHub</a>
+                  <a href="https://www.linkedin.com/in/julio-bernardes-da-silva-40738b431/" target="_blank" rel="noopener" aria-label="LinkedIn de Julio Bernardes">LinkedIn</a>
+                  <a href="https://github.com/JulioSilva101" target="_blank" rel="noopener" aria-label="GitHub de Julio Bernardes">GitHub</a>
                 </div>
-            </article>
+              </figcaption>
+            </figure>
 
-            <article class="membro">
-                <div class="membro-foto" aria-hidden="true">
-                    <img src="img/marina.jpeg" alt="">
-                </div>
-                <h2>Marina Queiroz</h2>
-                <p class="membro-funcao">Tester</p>
-                <p class="membro-rm">RM:574491</p>
-                <p>Turma: 1TDSPA</p>
+            <figure class="servico">
+              <div class="arco areia">
+                <img src="img/marina.jpeg" alt="Foto de Marina Queiroz">
+              </div>
+              <figcaption>
+                <strong class="texto-areia">Marina Queiroz</strong>
+                <span>Tester</span>
+                <span>RM 574491</span>
+                <span>1TDSPA</span>
                 <div class="membro-links">
-                    <a href="https://www.linkedin.com/in/marina-santana-queiroz-9baa77241/" aria-label="LinkedIn de Nome Completo 4">LinkedIn</a>
-                    <a href="https://github.com/marinasantanaq" aria-label="GitHub de Nome Completo 4">GitHub</a>
+                  <a href="https://www.linkedin.com/in/marina-santana-queiroz-9baa77241/" target="_blank" rel="noopener" aria-label="LinkedIn de Marina Queiroz">LinkedIn</a>
+                  <a href="https://github.com/marinasantanaq" target="_blank" rel="noopener" aria-label="GitHub de Marina Queiroz">GitHub</a>
                 </div>
-            </article>
+              </figcaption>
+            </figure>
 
-            <!-- INTEGRANTE 5: troque nome, função, RM, links e (opcional) a foto em img/integrante5.jpg -->
-            <article class="membro">
-                <div class="membro-foto" aria-hidden="true">
-                    <img src="img/sofia.jpg" alt="">
-                </div>
-                <h2>Sofia Oliveira Gonçalves</h2>
-                <p class="membro-funcao">Função no projeto</p>
-                <p class="membro-rm">RM: 576524</p>
-                <p>Turma: 1TDSPA</p>
+            <figure class="servico">
+              <div class="arco laranja">
+                <img src="img/Sofia.jpeg" alt="Foto de Sofia Oliveira Gonçalves">
+              </div>
+              <figcaption>
+                <strong class="texto-laranja">Sofia Oliveira Gonçalves</strong>
+                <span>Função no projeto</span>
+                <span>RM 576524</span>
+                <span>1TDSPA</span>
                 <div class="membro-links">
-                    <a href="https://www.linkedin.com/in/sofia-goncalves-272472431/" aria-label="LinkedIn de Nome Completo 5">LinkedIn</a>
-                    <a href="https://github.com/sofiaolivagoliva" aria-label="GitHub de Nome Completo 5">GitHub</a>
+                  <a href="https://www.linkedin.com/in/sofia-goncalves-272472431/" target="_blank" rel="noopener" aria-label="LinkedIn de Sofia Oliveira Gonçalves">LinkedIn</a>
+                  <a href="https://github.com/sofiaolivagoliva" target="_blank" rel="noopener" aria-label="GitHub de Sofia Oliveira Gonçalves">GitHub</a>
                 </div>
-            </article>
-            </div>
-        </section>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Chamada final -->
+      <section class="moldura chamada-final" aria-labelledby="titulo-cta">
+        <div class="brilho" aria-hidden="true"></div>
+        <h2 id="titulo-cta">Quer falar com a gente?</h2>
+        <p>Mande sua dúvida, sugestão ou ideia de parceria.</p>
+        <div class="grupo-botoes">
+          <a class="botao" href="contato.html">Entrar em contato</a>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer">
-        <div class="container footer-grade">
-            <section class="footer-sobre">
-                <a class="logo" href="index.html">
-                    <img src="imagens/logo.svg" alt="Logotipo Conecta do Bem">
-                    <span class="logo-texto">Conecta do Bem</span>
-                </a>
-                <p>Plataforma de gestão de doadores e parceiros desenvolvida para apoiar a Turma do Bem na missão de gerar inclusão social através do sorriso.</p>
-            </section>
+    <footer class="rodape">
+      <div class="container">
+        <div class="rodape-grade">
+          <div>
+            <a class="marca" href="index.html">
+              <img src="imagens/logo.svg" alt="">
+              <strong>Turma <span>do Bem</span></strong>
+            </a>
+            <p>Plataforma de gestão de doadores e parceiros pensada para apoiar a Turma do Bem na missão de gerar inclusão social através do sorriso.</p>
+          </div>
 
-            <nav aria-label="Links do rodapé">
-                <h2>Navegação</h2>
-                <ul class="footer-lista">
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="sobre.html">Sobre o projeto</a></li>
-                    <li><a href="integrantes.html">Integrantes</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
+          <nav aria-label="Links do rodapé">
+            <h2>Navegação</h2>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="sobre.html">Sobre o projeto</a></li>
+              <li><a href="integrantes.html">Integrantes</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </nav>
 
-            <nav aria-label="Links da solução">
-                <h2>Solução</h2>
-                <ul class="footer-lista">
-                    <li><a href="solucao.html">Como funciona</a></li>
-                    <li><a href="painel.html">Painel de indicadores</a></li>
-                    <li><a href="doadores.html">Gestão de doadores</a></li>
-                </ul>
-            </nav>
+          <nav aria-label="Links da solução">
+            <h2>Solução</h2>
+            <ul>
+              <li><a href="solucao.html">Como funciona</a></li>
+              <li><a href="painel.html">Painel de indicadores</a></li>
+              <li><a href="painel.html#doadores">Gestão de doadores</a></li>
+            </ul>
+          </nav>
 
-            <section>
-                <h2>Contato</h2>
-                <ul class="footer-lista">
-                    <li>contato@conectadobem.com.br</li>
-                    <li>FIAP - Av. Paulista, 1106 - São Paulo/SP</li>
-                    <li>Challenge 1TDS - 2026</li>
-                </ul>
-            </section>
+          <div>
+            <h2>Contato</h2>
+            <ul>
+              <li>contato@turmadobem.com.br</li>
+              <li>FIAP - Av. Paulista, 1106 - São Paulo/SP</li>
+              <li>Challenge 1TDS - 2026</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="footer-copy">
-            <p>&copy; 2026 Conecta do Bem - Projeto acadêmico FIAP em parceria com a Turma do Bem. Todos os direitos reservados.</p>
-        </div>
+        <p class="rodape-copia">&copy; <span data-ano>2026</span> Turma do Bem - Projeto acadêmico FIAP em parceria com a Turma do Bem.</p>
+      </div>
     </footer>
-    </div>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
