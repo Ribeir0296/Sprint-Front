@@ -1,61 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | Turma do Bem</title>
-    <link rel="icon" href="imagens/logo.svg" type="image/svg+xml">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700&family=Roboto:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre na sua conta da plataforma Turma do Bem.">
+  <title>Login | Turma do Bem</title>
+
+  <!-- Ícone da aba e fontes -->
+  <link rel="icon" href="imagens/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700&family=Roboto:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Estilos do site -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <main class="auth-card">
-        <section class="form-section">
-            <div class="icon-sun">
-                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Turma do Bem"><g stroke="#E8A56F" stroke-width="3.6" stroke-linecap="round" fill="none"><circle cx="50" cy="50" r="14"/><line x1="50" y1="4" x2="50" y2="20"/><line x1="50" y1="4" x2="50" y2="20" transform="rotate(45 50 50)"/><line x1="50" y1="4" x2="50" y2="20" transform="rotate(90 50 50)"/><line x1="50" y1="4" x2="50" y2="20" transform="rotate(135 50 50)"/><line x1="50" y1="4" x2="50" y2="20" transform="rotate(180 50 50)"/><line x1="50" y1="4" x2="50" y2="20" transform="rotate(225 50 50)"/><line x1="50" y1="4" x2="50" y2="20" transform="rotate(270 50 50)"/><line x1="50" y1="4" x2="50" y2="20" transform="rotate(315 50 50)"/></g></svg>
-            </div>
+  <div class="pagina">
+    <main class="moldura acesso">
+      <!-- Área de login -->
+      <section class="acesso-form">
+        <a href="index.html" aria-label="Voltar para a página inicial">
+          <img class="acesso-logo" src="imagens/logo.svg" alt="Símbolo da Turma do Bem">
+        </a>
 
-            <h1 class="title">Seja bem vindo á Turma do Bem</h1>
-            <p class="subtitle">aqui você agendará serviços gratúitos para a sua saúde</p>
+        <h1>Bem-vindo à Turma do Bem</h1>
+        <p class="subtitulo">Aqui você agenda serviços gratuitos para a sua saúde.</p>
 
-            <form action="processa_login.php" method="POST">
+        <form class="campos" novalidate data-validar
+          data-sucesso="Login feito! Abrindo o painel..."
+          data-destino="painel.html">
+          <input name="email" type="email" placeholder="Email"
+            aria-label="Email" autocomplete="email" required>
+          <input name="senha" type="password" placeholder="Senha"
+            aria-label="Senha" autocomplete="current-password" required>
 
-                 <a href="cadastro.html" class="btn-outline">Nao tenho uma conta</a>
-                 <br>
+          <button class="botao" type="submit">Entrar</button>
+          <p class="aviso" role="status" aria-live="polite"></p>
 
-                <div class="divider">
-                    <hr> <span>ou</span> <hr>
-                </div>
+          <label class="lembrar">
+            <input type="checkbox" name="manter_logado" checked>
+            Manter logado
+          </label>
 
-                <div class="input-group">
-                    <input type="email" name="email" id="email" placeholder="Email" autocomplete="email" aria-label="Email" required>
-                </div>
+          <div class="ou"><span></span>ou<span></span></div>
+          <a class="botao-secundario" href="cadastro.html">Não tenho uma conta</a>
+        </form>
 
-                <div class="input-group">
-                    <input type="password" name="senha" id="senha" placeholder="Senha" autocomplete="Senha" aria-label="Senha" required>
-                </div>
+        <p class="termos">Ao continuar, você concorda com <a href="#">nossos termos</a>.</p>
+        <a class="voltar" href="index.html">&larr; Voltar para o início</a>
+      </section>
 
-                <div class="submit">
-                    <button type="submit" class="btn-arrow" aria-label="Continuar">Entrar</button>
-                </div>
+      <!-- Área de boas-vindas -->
+      <section class="vitrine">
+        <div class="brilho" aria-hidden="true"></div>
+        <img class="sol-fundo" src="imagens/sol-fino.svg" alt="">
 
-                <div class="checkbox-group">
-                    <label class="custom-checkbox">
-                        <input type="checkbox" name="manter_logado" value="1" checked>
-                        <span class="checkmark"></span>
-                        Manter logado
-                    </label>
-                </div>
-            </form>
-
-            <p class="terms">Ao continuar, você concorda com <a href="#">nossos termos</a>.</p>
-        </section>
-
-        <div class="image-section">
-            <img src="img/dente-3d.png" alt="Dente 3D" class="dente-premium">
+        <div>
+          <span class="selo">Que bom te ver</span>
+          <h2>Cada sorriso começa com <span class="destaque">um gesto do bem.</span></h2>
         </div>
+
+        <div class="vitrine-imagem">
+          <img src="img/dente-3d.png" alt="Ilustração de um dente em 3D">
+
+          <ul class="vitrine-lista">
+            <li>
+              <strong>Atendimento gratuito</strong>
+              <span>Sem custo para o jovem nem para a família.</span>
+            </li>
+            <li>
+              <strong>+19 mil dentistas</strong>
+              <span>Uma rede de voluntários em 12 países.</span>
+            </li>
+            <li>
+              <strong>Acompanhamento</strong>
+              <span>Cuidado contínuo até os 18 anos.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
