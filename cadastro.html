@@ -10,31 +10,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700&family=Roboto:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <main class="auth-card auth-card--cadastro">
-        <section class="form-section">
-            <div class="icon-sun">
-                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Turma do Bem"><g stroke="#E8A56F" stroke-width="3.6" stroke-linecap="round" fill="none"><circle cx="50" cy="50" r="14"/><line x1="50" y1="4" x2="50" y2="20"/><line x1="50" y1="4" x2="50" y2="20" transform="rotate(45 50 50)"/><line x1="50" y1="4" x2="50" y2="20" transform="rotate(90 50 50)"/><line x1="50" y1="4" x2="50" y2="20" transform="rotate(135 50 50)"/><line x1="50" y1="4" x2="50" y2="20" transform="rotate(180 50 50)"/><line x1="50" y1="4" x2="50" y2="20" transform="rotate(225 50 50)"/><line x1="50" y1="4" x2="50" y2="20" transform="rotate(270 50 50)"/><line x1="50" y1="4" x2="50" y2="20" transform="rotate(315 50 50)"/></g></svg>
-            </div>
+  <div class="pagina">
+    <main class="moldura acesso">
+      <!-- Área de cadastro -->
+      <section class="acesso-form">
+        <a href="index.html" aria-label="Voltar para a página inicial">
+          <img class="acesso-logo" src="img/imagens/logo.svg" alt="Símbolo da Turma do Bem">
+        </a>
 
-            <h1 class="title">Crie sua conta</h1>
-            <p class="subtitle">Preencha os dados abaixo para se cadastrar na plataforma.</p>
+        <h1>Crie sua conta</h1>
+        <p class="subtitulo">Preencha os dados abaixo para se cadastrar na plataforma.</p>
 
-            <form action="processa_cadastro.php" method="POST">
+        <form class="campos" novalidate data-validar
+          data-sucesso="Cadastro realizado! Levando você para o login..."
+          data-destino="login.html">
+          <input name="nome" type="text" placeholder="Nome Completo"
+            aria-label="Nome completo" autocomplete="name" required>
+          <input name="email" type="email" placeholder="Email"
+            aria-label="Email" autocomplete="email" required>
+          <input name="senha" type="password" placeholder="Crie uma Senha"
+            aria-label="Crie uma senha" autocomplete="new-password" minlength="6" required>
 
-                <div class="input-group">
-                    <input type="text" name="nome" id="nome" placeholder="Nome Completo" autocomplete="name" aria-label="Nome completo" required>
-                </div>
+          <button class="botao" type="submit">Finalizar Cadastro</button>
+          <p class="aviso" role="status" aria-live="polite"></p>
 
-                <div class="input-group">
-                    <input type="email" name="email" id="email" placeholder="Email" autocomplete="email" aria-label="Email" required>
-                </div>
+          <div class="ou"><span></span>ou<span></span></div>
+          <a class="botao-secundario" href="login.html">Já tenho uma conta</a>
+        </form>
 
-                <div class="input-group">
-                    <input type="password" name="senha" id="senha" placeholder="Crie uma Senha" autocomplete="new-password" aria-label="Crie uma senha" required>
-                </div>
+        <p class="termos">Ao se cadastrar, você concorda com <a href="#">nossos termos</a>.</p>
+        <a class="voltar" href="index.html">&larr; Voltar para o início</a>
+      </section>
 
-                <button type="submit" class="btn-primary">Finalizar Cadastro</button>
+      <!-- Área de apresentação dos serviços -->
+      <section class="vitrine">
+        <div class="brilho" aria-hidden="true"></div>
+        <img class="sol-fundo" src="imagens/sol-fino.svg" alt="">
 
                 <div class="divider">
                     <hr> <span>ou</span> <hr>
@@ -48,6 +61,98 @@
         <div class="image-section">
             <img src="img/dente-3d.png" alt="Dente 3D" class="dente-premium">
         </div>
+
+        <div class="arcos">
+          <!-- Serviço 1: Odontologia -->
+          <figure class="servico">
+            <div class="arco laranja">
+              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M30 14C18 12 10 22 14 38C17 50 20 58 22 74C23 84 30 88 33 76C35 68 38 62 50 62C62 62 65 68 67 76C70 88 77 84 78 74C80 58 83 50 86 38C90 22 82 12 70 14C62 16 56 20 50 20C44 20 38 16 30 14Z"/>
+              </svg>
+            </div>
+            <figcaption>
+              <strong class="texto-laranja">Odontologia</strong>
+              <span>Cuidado com o sorriso</span>
+            </figcaption>
+          </figure>
+
+          <!-- Serviço 2: Psicologia -->
+          <figure class="servico">
+            <div class="arco areia">
+              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 14C20 46 30 62 50 62C70 62 80 46 80 14"/>
+                <line x1="50" y1="8" x2="50" y2="92"/>
+              </svg>
+            </div>
+            <figcaption>
+              <strong class="texto-areia">Psicologia</strong>
+              <span>Cuidado com a mente</span>
+            </figcaption>
+          </figure>
+
+          <!-- Serviço 3: Acolhimento -->
+          <figure class="servico">
+            <div class="arco claro">
+              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M50 88C18 64 10 46 10 33C10 20 20 11 32 11C40 11 46 16 50 23C54 16 60 11 68 11C80 11 90 20 90 33C90 46 82 64 50 88Z"/>
+                <g transform="translate(25 19) scale(.5)" stroke-width="10">
+                  <circle cx="50" cy="36" r="22"/>
+                  <line x1="50" y1="58" x2="50" y2="90"/>
+                  <line x1="35" y1="75" x2="65" y2="75"/>
+                </g>
+              </svg>
+            </div>
+            <figcaption>
+              <strong class="texto-laranja">Acolhimento</strong>
+              <span>Cuidado com você</span>
+            </figcaption>
+          </figure>
+
+          <!-- Serviço 4: Atendimento gratuito -->
+          <figure class="servico">
+            <div class="arco areia">
+              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <defs>
+                  <mask id="corte">
+                    <rect width="100" height="100" fill="#fff"/>
+                    <line x1="14" y1="14" x2="86" y2="86" stroke="#000" stroke-width="15"/>
+                  </mask>
+                </defs>
+                <g mask="url(#corte)">
+                  <path d="M39 31C24 40 15 55 16 69C17 82 28 89 50 89C72 89 83 82 84 69C85 55 76 40 61 31Z"/>
+                  <path d="M39 31L33 15C43 19 57 19 67 15L61 31"/>
+                  <path d="M57 53C55 50.5 52.5 49.5 50 49.5C45.5 49.5 43 52 43 55.5C43 63 57 59.5 57 67.5C57 71 54.5 74 50 74C46.5 74 44 72.5 42.5 70" stroke-width="4.5"/>
+                  <line x1="50" y1="44" x2="50" y2="79" stroke-width="4.5"/>
+                </g>
+                <line x1="14" y1="14" x2="86" y2="86"/>
+              </svg>
+            </div>
+            <figcaption>
+              <strong class="texto-areia">Sem custos</strong>
+              <span>Atendimento gratuito</span>
+            </figcaption>
+          </figure>
+
+          <!-- Serviço 5: Doação e colaboração -->
+          <figure class="servico">
+            <div class="arco laranja">
+              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M56 46C43 37 37 31 37 24C37 18.5 41 15 45.5 15C49.5 15 52.5 17 56 21C59.5 17 62.5 15 66.5 15C71 15 75 18.5 75 24C75 31 69 37 56 46Z"/>
+                <rect x="7" y="60" width="13" height="30" rx="3"/>
+                <path d="M20 65H37C43 65 47 67 51 71H62C67 71 67 79 62 79H47"/>
+                <path d="M20 86H55C59 86 62 85 65 83.5L86 71.5C91.5 68.5 88.5 60.5 82 63.5L64.5 72.5"/>
+              </svg>
+            </div>
+            <figcaption>
+              <strong class="texto-laranja">Faça o bem</strong>
+              <span>Seja doador ou colaborador</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
     </main>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

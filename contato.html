@@ -1,135 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Entre em contato com a equipe do Conecta do Bem.">
-    <title>Contato | Conecta do Bem</title>
-    <link rel="icon" href="imagens/logo.svg" type="image/svg+xml">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700&family=Roboto:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="pagina">
-    <header class="header">
-        <div class="container header-conteudo">
-            <a class="logo" href="index.html" aria-label="Conecta do Bem - página inicial">
-                <img src="imagens/logo.svg" alt="Logotipo Conecta do Bem: um sol">
-                <span class="logo-texto">Conecta <span>do Bem</span></span>
-            </a>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com a equipe do projeto Turma do Bem.">
+  <title>Contato | Turma do Bem</title>
 
-            <!-- Menu principal de navegação -->
-            <nav aria-label="Menu principal">
-                <ul class="menu-lista">
-                    <li><a class="menu-link" href="index.html">Início</a></li>
-                    <li><a class="menu-link" href="sobre.html">Sobre</a></li>
-                    <li><a class="menu-link" href="solucao.html">Solução</a></li>
-                    <li><a class="menu-link" href="painel.html">Protótipo</a></li>
-                    <li><a class="menu-link" href="integrantes.html">Integrantes</a></li>
-                    <li><a class="menu-link" href="faq.html">FAQ</a></li>
-                    <li><a class="menu-link ativo" aria-current="page" href="contato.html">Contato</a></li>
-                    <li><a class="menu-link menu-link-destaque" href="login.html">Entrar</a></li>
-                </ul>
-            </nav>
-        </div>
+  <!-- Ícone da aba e fontes -->
+  <link rel="icon" href="img/imagens/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700&family=Roboto:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Estilos do site -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="pagina">
+    <!-- Cabeçalho: fica por cima da moldura azul -->
+    <header class="cabecalho">
+      <div class="topo container">
+        <a class="marca" href="index.html" aria-label="Turma do Bem - página inicial">
+          <img src="img/imagens/logo.svg" alt="">
+          <strong>Turma <span>do Bem</span></strong>
+        </a>
+
+        <button class="menu-botao" type="button" aria-label="Abrir menu"
+          aria-expanded="false" aria-controls="menu-principal">
+          <span></span>
+        </button>
+
+        <nav id="menu-principal" aria-label="Menu principal">
+          <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="solucao.html">Solução</a></li>
+            <li><a href="painel.html">Protótipo</a></li>
+            <li><a href="integrantes.html">Integrantes</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a class="menu-entrar" href="login.html">Entrar</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <section class="topo-pagina">
-            <div class="container">
-                <span class="etiqueta">Contato</span>
-                <h1>Fale com a nossa equipe</h1>
-                <p>Tem uma dúvida, sugestão ou quer conversar sobre o projeto? Envie uma mensagem.</p>
-            </div>
+      <!-- Moldura azul com a abertura da página -->
+      <div class="moldura">
+        <div class="brilho" aria-hidden="true"></div>
+        <img class="sol-fundo" src="imagens/sol-fino.svg" alt="">
+        <section class="abertura abertura-simples container">
+          <span class="selo">Contato</span>
+          <h1>Fale com a <span class="destaque">nossa equipe.</span></h1>
+          <p>Tem uma dúvida, sugestão ou quer conversar sobre o projeto? Envie uma mensagem.</p>
         </section>
+      </div>
 
-        <section class="secao secao-compacta">
-            <div class="container contato-grade">
-                <div class="contato-info">
-                    <article class="painel">
-                        <h3>Email</h3>
-                        <p>contato@conectadobem.com.br</p>
-                    </article>
-                    <article class="painel">
-                        <h3>Endereço</h3>
-                        <p>FIAP - Av. Paulista, 1106 - São Paulo/SP</p>
-                    </article>
-                    <article class="painel">
-                        <h3>Projeto</h3>
-                        <p>Challenge 1TDS - 2026, em parceria com a Turma do Bem.</p>
-                    </article>
-                </div>
+      <!-- Informações + formulário -->
+      <section class="secao">
+        <div class="container contato revelar">
+          <div class="contato-info">
+            <article class="cartao">
+              <h3>Email</h3>
+              <p>contato@turmadobem.com.br</p>
+            </article>
+            <article class="cartao">
+              <h3>Endereço</h3>
+              <p>FIAP - Av. Paulista, 1106 - São Paulo/SP</p>
+            </article>
+            <article class="cartao">
+              <h3>Projeto</h3>
+              <p>Challenge 1TDS - 2026, em parceria com a Turma do Bem.</p>
+            </article>
+          </div>
 
-                <!-- Formulário preparado para o Back-end -->
-                <form class="contato-form" action="processa_contato.php" method="POST">
-                    <div class="input-group">
-                        <input type="text" name="nome" id="nome" placeholder="Nome Completo" autocomplete="name" aria-label="Nome completo" required>
-                    </div>
-                    <div class="input-group">
-                        <input type="email" name="email" id="email" placeholder="Email" autocomplete="email" aria-label="Email" required>
-                    </div>
-                    <div class="input-group">
-                        <select name="assunto" id="assunto" aria-label="Assunto" required>
-                            <option value="" disabled selected>Assunto</option>
-                            <option value="duvida">Dúvida</option>
-                            <option value="sugestao">Sugestão</option>
-                            <option value="parceria">Parceria ou doação</option>
-                            <option value="outro">Outro</option>
-                        </select>
-                    </div>
-                    <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem" aria-label="Sua mensagem" required></textarea>
-                    <button type="submit" class="btn-primary">Enviar mensagem</button>
-                </form>
-            </div>
-        </section>
+          <!-- Os atributos "name" já deixam o formulário pronto para o back-end -->
+          <form class="contato-form campos" method="POST" novalidate
+            data-validar data-sucesso="Mensagem enviada! Responderemos em breve.">
+            <input type="text" name="nome" placeholder="Nome Completo"
+              aria-label="Nome completo" autocomplete="name" required>
+            <input type="email" name="email" placeholder="Email"
+              aria-label="Email" autocomplete="email" required>
+            <select name="assunto" aria-label="Assunto" required>
+              <option value="" disabled selected>Assunto</option>
+              <option value="duvida">Dúvida</option>
+              <option value="sugestao">Sugestão</option>
+              <option value="parceria">Parceria ou doação</option>
+              <option value="outro">Outro</option>
+            </select>
+            <textarea name="mensagem" placeholder="Sua mensagem"
+              aria-label="Sua mensagem" required></textarea>
+
+            <button class="botao" type="submit">Enviar mensagem</button>
+            <p class="aviso" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer">
-        <div class="container footer-grade">
-            <section class="footer-sobre">
-                <a class="logo" href="index.html">
-                    <img src="imagens/logo.svg" alt="Logotipo Conecta do Bem">
-                    <span class="logo-texto">Conecta do Bem</span>
-                </a>
-                <p>Plataforma de gestão de doadores e parceiros desenvolvida para apoiar a Turma do Bem na missão de gerar inclusão social através do sorriso.</p>
-            </section>
+    <footer class="rodape">
+      <div class="container">
+        <div class="rodape-grade">
+          <div>
+            <a class="marca" href="index.html">
+              <img src="img/imagens/logo.svg" alt="">
+              <strong>Turma <span>do Bem</span></strong>
+            </a>
+            <p>Plataforma de gestão de doadores e parceiros pensada para apoiar a Turma do Bem na missão de gerar inclusão social através do sorriso.</p>
+          </div>
 
-            <nav aria-label="Links do rodapé">
-                <h2>Navegação</h2>
-                <ul class="footer-lista">
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="sobre.html">Sobre o projeto</a></li>
-                    <li><a href="integrantes.html">Integrantes</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
+          <nav aria-label="Links do rodapé">
+            <h2>Navegação</h2>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="sobre.html">Sobre o projeto</a></li>
+              <li><a href="integrantes.html">Integrantes</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </nav>
 
-            <nav aria-label="Links da solução">
-                <h2>Solução</h2>
-                <ul class="footer-lista">
-                    <li><a href="solucao.html">Como funciona</a></li>
-                    <li><a href="painel.html">Painel de indicadores</a></li>
-                    <li><a href="doadores.html">Gestão de doadores</a></li>
-                </ul>
-            </nav>
+          <nav aria-label="Links da solução">
+            <h2>Solução</h2>
+            <ul>
+              <li><a href="solucao.html">Como funciona</a></li>
+              <li><a href="painel.html">Painel de indicadores</a></li>
+              <li><a href="painel.html#doadores">Gestão de doadores</a></li>
+            </ul>
+          </nav>
 
-            <section>
-                <h2>Contato</h2>
-                <ul class="footer-lista">
-                    <li>contato@conectadobem.com.br</li>
-                    <li>FIAP - Av. Paulista, 1106 - São Paulo/SP</li>
-                    <li>Challenge 1TDS - 2026</li>
-                </ul>
-            </section>
+          <div>
+            <h2>Contato</h2>
+            <ul>
+              <li>contato@turmadobem.com.br</li>
+              <li>FIAP - Av. Paulista, 1106 - São Paulo/SP</li>
+              <li>Challenge 1TDS - 2026</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="footer-copy">
-            <p>&copy; 2026 Conecta do Bem - Projeto acadêmico FIAP em parceria com a Turma do Bem. Todos os direitos reservados.</p>
-        </div>
+        <p class="rodape-copia">&copy; <span data-ano>2026</span> Turma do Bem - Projeto acadêmico FIAP em parceria com a Turma do Bem.</p>
+      </div>
     </footer>
-    </div>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
